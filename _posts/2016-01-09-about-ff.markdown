@@ -7,10 +7,6 @@ date:   2016-01-09 09:23:50
 "Firefly III" is a financial manager. It can help you keep track of expenses, income, budgets and everything in between. It even supports credit cards, shared 
 household accounts and savings accounts! It's pretty fancy. You should use it to save and organise money.
  
-Personal financial management is pretty difficult, and everybody has their own approach to it. Some people
-make budgets, other people limit their cashflow by throwing away their credit cards, others try to increase
-their current cashflow. There are tons of ways to save and earn money.
-
 Firefly works on the principle that if you know where you're money is going, you can stop it from going there.
 
 You can **[download Firefly III from Github](https://github.com/JC5/firefly-iii)**. [The installation guide](installation-guide/) has all the details you need.
@@ -18,9 +14,8 @@ You can **[download Firefly III from Github](https://github.com/JC5/firefly-iii)
 Of course, to get to know Firefly III first, and to see if it fits you, please check out these resources:
 
 - The [screenshots](screenshots/) so you can see what it looks like;
-- The [feature list](features/) so you know what it does; 
-- The [full description](description/), which will tell you how Firefly works,
-and the philosophy behind it.
+- The [feature list](features/) so you know what it does;
+- The [full description](description/), which will tell you how Firefly works, and the philosophy behind it.
 
 ### Then what?
 
@@ -34,7 +29,6 @@ If you decide you want to run Firefly III yourself (this is the mandatory next s
 - [The installation guide](installation-guide/);
 - [The upgrade guide](upgrade-guide/) (if you are already running it);
 - [Some important must-reads](must-reads/) that did not fit on this page
-
 
 ### Finally...
 

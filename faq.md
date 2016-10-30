@@ -5,25 +5,26 @@ permalink: /faq/
 show: yes
 ---
 
-## I have installation problems
+### So what is this thing really?
+
+Firefly III is a web application written in PHP 7.0 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the [full description](/description/).
+
+### How can I use it?
+
+You must install it yourself on webhosting of your choice, or on a webserver you have access to. The [installation guide](/installation-guide/) can help you.
+
+### What if that is too complex for me?
+
+Sorry, can't help you there
+
+### I have a problem installing or using it!
 
 [Open an issue](https://github.com/JC5/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).
 
-## The installation is difficult
+### The installation is difficult
 
 I know, and I'm sorry. I never intended this tool to be actually used by other people. I put it on Github because it was free. 
 
-## Firefly III is complicated
+### Firefly III is complicated
 
 Same answer, I'm afraid. Let me know what I can do to help!
-
-## I get an error about "ZERO transactions".
-
-This is a rare one, but it happens. To fix it:
-
-1. Open your database, and find the table called ``transaction_journals``.
-2. In this table search, for the entry with the ID that is mentioned in the error message.
-3. Find the field ``deleted_at`` (it should be empty or NULL).
-4. Fill in the date and time of today using the following format: ``2016-04-29 17:19:51``.
-
-This should fix the problem.
