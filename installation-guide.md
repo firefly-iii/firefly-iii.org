@@ -27,6 +27,7 @@ Take your pick:
 This should get you up and running. Now, follow the "installation steps".
 
 ### Installation steps
+
 #### Access your server
 SSH into your server, or otherwise access it. 
 
@@ -46,7 +47,7 @@ Once you're there, run the following command:
 Please keep in mind that the web root of Firefly III is in the ``./public/`` directory, so you may need to update your web server configuration to match this later on.
 
 #### Install packages
-To install all necessary packages, run:
+Enter the directory where all the code is. To install all necessary packages, run:
 
 1. ``composer install --no-scripts --no-dev``
 
