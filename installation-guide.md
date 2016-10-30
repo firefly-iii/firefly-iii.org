@@ -14,7 +14,7 @@ The hardest part of this installation manual is installing Apache (or nginx), an
 
 Installing Firefly III itself is fairly easy, because composer and Laravel are easy to handle.
 
-There is also a Docker installation.
+There is also a [Docker file](/installation-guide-docker/).
 
 ### Server preparations
 
