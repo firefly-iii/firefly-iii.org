@@ -1,0 +1,12 @@
+# Site settings
+title: Firefly III
+email: thegrumpydictator@gmail.com
+description: > 
+  Firefly III is a personal finances manager.
+baseurl: "/firefly-iii/" # the subpath of your site, e.g. /blog/
+url: "https://jc5.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  JC5
+
+# Build settings
+markdown: kramdown
