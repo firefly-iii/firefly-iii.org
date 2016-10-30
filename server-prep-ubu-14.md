@@ -9,10 +9,11 @@ permalink: /server-prep-ubu-14/
 First, make sure your server is up to date:
 
 ```
-sudo apt-get update; sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
 
-## Install MySQL
+## Install 
 
 ```
 sudo apt-get install -y mysql-server
@@ -61,5 +62,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 ```
 
 ## Continue with the installation
+
+Please note that this guide for Ubuntu 14.x does not include Apache installation instructions. It's on my TODO list.
 
 See the [installation guide](/installation-guide).

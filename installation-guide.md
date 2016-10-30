@@ -22,7 +22,7 @@ Take your pick:
 
 1. Server preparations for [Ubuntu 14.xx](/server-prep-ubu-14/)
 2. Server preparations for [Ubuntu 16.xx](/server-prep-ubu-16/)
-3. Server preparations for [CentOS](/installation-guide-centos/)
+3. Server preparations for [CentOS](/server-prep-centos/)
 
 This should get you up and running. Now, follow the "installation steps".
 
@@ -55,18 +55,18 @@ Enter the directory where all the code is. To install all necessary packages, ru
 Configure Firefly III by doing the following:
 
 1. ``cp firefly-iii/.env.example firefly-iii/.env``
-2. ``php artisan key:generate```
+2. ``php artisan key:generate``
 
 Open ``firefly-iii/.env`` and check out the instructions below. Fields in the ``.env`` file that are not mentioned here should not be changed unless you know what they're for.
 
-##### APP settings
+#### APP settings
 
 * ``APP_DEBUG`` set this to true when you file a bug. It will enable detailed errors.
 * ``APP_FORCE_SSL`` Firefly III knows if you use http or https. To force https, set this to true.
 * ``APP_FORCE_ROOT`` Firefly III knows its own web address. If it is mistaken, fill in this field
 * ``APP_LOG_LEVEL`` Change this to get more detailed logging.
 
-##### DB settings
+#### DB settings
 
 Change these settings to match your MySQL settings. Almost always, only the username, password and database need to be changed.
 
@@ -76,7 +76,7 @@ Change these settings to match your MySQL settings. Almost always, only the user
 * ``COOKIE_DOMAIN`` Tie the cookies to a specific domain
 * ``COOKIE_SECURE`` Only use cookies over https
 
-##### MAIL settings
+#### MAIL settings
 
 These are important so pay attention. Use your GMail account or create an account at mailtrap.io. Firefly III uses these settings to mail error reports and detailed crash information if necessary. In the future, Firefly III will use these settings to mail you financial reports and stuff like that.
 
@@ -90,12 +90,11 @@ Whatever mail service you use, they can tell you what these settings are.
 * ``MAIL_PASSWORD`` The password.
 * ``MAIL_ENCRYPTION`` If relevant. Usually TLS or SSL.
 
-##### Other settings
+#### Other settings
 
 * ``SEND_REGISTRATION_MAIL`` Send new users a email for their registration. Leave this on true, it's useful for your own registration.
 * ``MUST_CONFIRM_ACCOUNT`` Is usually quite pointless for you so leave it to false.
 * ``SHOW_INCOMPLETE_TRANSLATIONS`` Set this to true and you'll see all the weird languages Firefly III supports that are only half-translated.
-
 * ``ANALYTICS_ID`` Put in a GA analytics ID if you want.
 * ``SITE_OWNER`` Fill in your own email address.
 
