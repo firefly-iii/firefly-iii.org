@@ -5,7 +5,7 @@ permalink: /description/
 show: yes
 ---
 
-This is the full description of how Firefly III works.
+This is the full description of how [Firefly III](https://github.com/JC5/firefly-iii) works. It is a _long read_ but worth it. It tells you everything you need to know.
 
 Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
 
@@ -129,11 +129,11 @@ The general gist is that saving money is difficult. So you could set a target am
 
 ## Bills
 
-Rent. Comes back every month. Create a bill and Firefly will not only match new withdrawals to bills but also show you which bills are still due and which ones aren't.
+Rent. Comes back every month. Create a bill and Firefly will not only match new withdrawals to bills but also show you which bills are still due and which ones aren't. 
 
 ## Reports 
 
-Will show you how you have been doing.
+Will show you how you have been doing. You can select the accounts to be included and the period as well.
 
 ## Rules
 
@@ -144,3 +144,18 @@ Firefly III can automatically categorize or budgetize your transactions based on
 * Choose the correct category based on the amount of the transaction.
 
 These rules can be created by you. You have full control.
+
+---
+
+## Conclusion
+
+So there you have it. An application that can do basically everything. Notable missing stuff is:
+
+- The ability to track stock;
+- The ability to track debts, loans and stuff like that;
+- The ability to trak mortgages.
+
+All of this is yet to come!
+
+
+

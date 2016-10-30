@@ -15,7 +15,7 @@ You must install it yourself on webhosting of your choice, or on a webserver you
 
 ### What if that is too complex for me?
 
-Sorry, can't help you there
+Sorry, can't help you there.
 
 ### I have a problem installing or using it!
 
