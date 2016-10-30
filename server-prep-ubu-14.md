@@ -16,7 +16,8 @@ sudo apt-get update; sudo apt-get upgrade
 
 ```
 sudo apt-get install -y mysql-server
-sudo mysql_install_db; sudo mysql_secure_installation
+sudo mysql_install_db
+sudo mysql_secure_installation
 ```
 
 If everything works as intended you have created a root user for MySQL and a password. Maybe you had MySQL already.
@@ -36,6 +37,18 @@ sudo apt-get install -y php7.0-curl php7.0-gd php7.0-imap php7.0-intl php7.0-jso
 sudo apt-get install -y php7.0-mcrypt php7.0-readline php7.0-tidy php7.0-zip php7.0-bcmath 
 sudo apt-get install -y php7.0-xml php7.0-mbstring php7.0-sqlite php7.0-bz2
 
+```
+
+Verify your PHP version:
+
+```
+php -v
+```
+
+Should return something like:
+
+```
+PHP 7.0.8-0ubuntu0.16.04.3 (cli) ( NTS )
 ```
 
 ## Install composer
