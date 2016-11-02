@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation guide
+title: Installation guide FAQ
 permalink: /installation-guide-faq/
 ---
 
