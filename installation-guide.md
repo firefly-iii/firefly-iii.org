@@ -50,7 +50,6 @@ Please keep in mind that the web root of Firefly III is in the ``./public/`` dir
 Enter the directory where all the code is. To install all necessary packages, run:
 
 1. ``composer install --no-scripts --no-dev``
-2. ``composer install --no-dev``
 
 #### Configure Firefly III
 Configure Firefly III by doing the following:
@@ -106,6 +105,12 @@ Any other settings, such as in the ``config`` directory should not be changed.
 Run the following command to install the database:
 
 * ``php artisan migrate --seed --env=production``
+
+#### Finish the installation
+
+Finally, run the following command to finish the installation:
+
+1. ``composer install --no-dev``
 
 #### Visit Firefly III
 
