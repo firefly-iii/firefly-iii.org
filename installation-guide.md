@@ -29,7 +29,7 @@ This should get you up and running. Now, follow the "installation steps".
 ### Installation steps
 
 #### Access your server
-SSH into your server, or otherwise access it. 
+SSH into your server, or otherwise access it. If SSH is not installed, please refer back to the server preparations. Beware though, I am not yet sure what the command is to install SSH on a CentOS machine.
 
 #### Create a new database and user account
 Use your MySQL credentials (you created these when you installed MySQL, or you had them already) to create a new database called ``firefly-iii`` and a user ``firefly-iii``. Please give this user a strong password, and access to the database.
@@ -105,6 +105,8 @@ Any other settings, such as in the ``config`` directory should not be changed.
 Run the following command to install the database:
 
 * ``php artisan migrate --seed --env=production``
+
+Answer YES to the questions.
 
 #### Finish the installation
 
