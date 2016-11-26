@@ -29,6 +29,6 @@ That should do it!
 * Run ``git pull``
 * RUN ``rm -rf bootstrap/cache/*``
 * Run ``rm -rf vendor/``
-* Run ``composer install --no-scripts``
-* Run ``composer install``
+* Run ``composer install --no-scripts --no-dev``
+* Run ``composer install --no-dev``
 * Run ``php artisan migrate --env=production``
