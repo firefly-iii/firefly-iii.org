@@ -8,5 +8,10 @@ url: "https://firefly-iii.github.io" # the base hostname & protocol for your sit
 twitter_username: 
 github_username:  JC5
 
-# Build settings
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
 markdown: kramdown
