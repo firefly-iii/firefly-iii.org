@@ -7,16 +7,28 @@ show: yes
 
 _Please note that everything in these screenshots is fictional and may not be realistic._
 
-[![Index](https://i.nder.be/hr8fhqkn/1024)](https://i.nder.be/hr8fhqkn)
+You can click on the screenshots for a larger view.
 
-[![Accounts](https://i.nder.be/cvvukqfk/1024)](https://i.nder.be/cvvukqfk)
+[![Index](https://i.nder.be/h2b37243/1024)](https://i.nder.be/h2b37243)
 
-[![Budgets](https://i.nder.be/hcncgx2h/1024)](https://i.nder.be/hcncgx2h)
+This shows you the index of Firefly III.
 
-[![Reports 1](https://i.nder.be/ckfpvyfc/1024)](https://i.nder.be/ckfpvyfc)
+[![Accounts](https://i.nder.be/hv70pbwc/1024)](https://i.nder.be/hv70pbwc)
 
-[![Reports 2](https://i.nder.be/hw07bks9/1024)](https://i.nder.be/hw07bks9)
+This is a typical account overview in Firefly III.
 
-[![Bills](https://i.nder.be/g5zx0fnc/1024)](https://i.nder.be/g5zx0fnc)
+[![Budgets](https://i.nder.be/g4dg6ddb/1024)](https://i.nder.be/g4dg6ddb)
 
-[![Piggy banks](https://i.nder.be/gu0dwqrx/1024)](https://i.nder.be/gu0dwqrx)
+This is what the budget-overview looks like in Firefly III.
+
+[![Default report](https://i.nder.be/ccn0u2mp/1024)](https://i.nder.be/ccn0u2mp)
+
+The default financial report can tell you everything you need to know.
+
+[![Category report](https://i.nder.be/gm8hbh7z/1024)](https://i.nder.be/gm8hbh7z)
+
+The "category" report can help you drill down in expenses and earnings
+
+[![Piggy bank](https://i.nder.be/g3447vc0/1024)](https://i.nder.be/g3447vc0/g5zx0fnc)
+
+A piggy bank is a typical thing to manage: try saving a large amount and you know how difficult it can be. But with Firefly III, not anymore!
