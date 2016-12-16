@@ -13,18 +13,10 @@ Firefly III is a web application written in PHP 7.0 with a database behind it th
 
 You must install it yourself on webhosting of your choice, or on a webserver you have access to. The [installation guide](/installation-guide/) can help you.
 
-### What if that is too complex for me?
+### Can I use it on PHP 5.x?
 
-Sorry, can't help you there.
+No. Most code has been written specifically for PHP 7.0 and higher.
 
 ### I have a problem installing or using it!
 
 [Open an issue](https://github.com/JC5/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).
-
-### The installation is difficult
-
-I know, and I'm sorry. I never intended this tool to be actually used by other people. I put it on Github because it was free. 
-
-### Firefly III is complicated
-
-Same answer, I'm afraid. Let me know what I can do to help!
