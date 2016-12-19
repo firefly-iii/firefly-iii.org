@@ -33,6 +33,8 @@ Firefly III uses the following libraries and tools:
 * [Bootstrap sortable](https://github.com/drvic10k/bootstrap-sortable) by [Matúš Brliť](https://github.com/drvic10k).
 * [Date range picker](https://github.com/dangrossman/bootstrap-daterangepicker/) by [Dan Grossman](https://github.com/dangrossman)
 * The [real favicon generator](http://realfavicongenerator.net/)
+* The favicon has been [made by Oliver](http://www.flaticon.com/authors/madebyoliver).
+* Alternative icon has been made by [Freepik](http://www.freepik.com).
 * Various other open source components (see [composer.json](https://github.com/JC5/firefly-iii/blob/master/composer.json))
 
 
