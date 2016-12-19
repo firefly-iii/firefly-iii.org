@@ -34,4 +34,4 @@ If you decide you want to run Firefly III yourself (this is the mandatory next s
 
 If you do not like Firefly, or it's broken or it does not work, please send me [an email](mailto:thegrumpydictator@gmail.com) or [open an issue on Github](https://github.com/JC5/firefly-iii/issues/new). I will be happy to help.
 
-If you like Firefly and if it helps you save lots of money, why not send me [a dime for every dollar saved](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2ZMV952UUSCLU&lc=NL&item_name=Development%20of%20Firefly&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted). <small>This is a joke, although the Paypal form works just fine, try it!</small>
+If you like Firefly and if it helps you save lots of money, why not send me [a dime for every dollar saved](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44UKUT455HUFA). <small>This is a joke, although the Paypal form works just fine, try it!</small>
