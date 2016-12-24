@@ -17,6 +17,10 @@ You must install it yourself on webhosting of your choice, or on a webserver you
 
 No. Most code has been written specifically for PHP 7.0 and higher.
 
+### How do I use the "balancing act"-tag?
+
+Please read [the page about the balancing act tag](/balancing-act-tag/)
+
 ### I have a problem installing or using it!
 
 [Open an issue](https://github.com/JC5/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).

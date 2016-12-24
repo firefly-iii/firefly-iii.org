@@ -27,18 +27,9 @@ This procedure allowed me to program a very simple tool (the original "Firefly")
 
 In those early, exciting days, all I did was live from the 1st to the 31st of the month. This helped me save a lot of money already. The rest of Firefly's features have been built around this idea. Read below!
 
-## Accounts
+### Accounts
 
-There are three kinds of accounts in Firefly III:
-
-* **Asset accounts**
-  * Asset accounts hold your own money. Your bank account is an asset account. Your savings account is an asset account. They would be called "Savings account" or "Checking account". These accounts can be created with an initial (negative) balance, which is useful since you won't be entering your entire financial history.
-* **Expense accounts**
-  * Expense accounts are stores, shops, online things, whatever. For example: "Target", "Thinkgeek", "Walmart" or wherever you buy stuff.
-* **Revenue accounts**
-  * Revenue accounts are the places you get money from. Ie. "my mom", "my job" or "the gubberment".
-
-This split is there because my Googling into accounting has learned me that you should split these up. Internally too, even accounts with the same name but different types are split up. For example, if you shop at the place you work at, you will have a revenue account called "Albert Heijn" from which your salary is drawn but _also_ an expense account called "Albert Heijn" where you pay your groceries.
+Accounts are the senders or receivers of money. Like you bank account or a store. You can read about them on the [accounts page](/accounts/)
 
 ## Transactions
 
