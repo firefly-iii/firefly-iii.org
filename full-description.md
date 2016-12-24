@@ -15,8 +15,9 @@ After being a grownup for a while I noticed I was living from paycheck to payche
 
 The first thing I did was simple: I started living from the first day of the month until the last. This meant that I had to do a few things. This is something I still do:
 
-1. On the day I get paid, I move my entire salary to my savings account.
-2. On the _last_ day of the month, I think how much money I will need in the next month.
+1. On the day I get paid, I move my entire salary to my savings account. All of it. Not a penny missing!
+2. Then, I try to live the rest of the month on the money I had left. This was *very* hard the first few times.
+3. On the _last_ day of the month, I think how much money I will need in the next month.
 3. On the _first_ day of the month, I put that amount in my checking account.
 
 So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the month, when you move (part of it) back to your checking account. If you get paid every week, this routine repeats weekly.
@@ -37,42 +38,11 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 
 ## Budgets
 
-Once you start creating transactions you start to realise that in a month, the same kind of stuff always comes back:
-
-* Bills
-* Groceries
-* Cigarettes
-* Going out for drinks
-* Clothing
-
-These are budgets. Budgets are a kind of "category" that come back every single month. Bills are returning (rent, water, electricity). You buy groceries every day. You need to pay rent every month. 
-
-In what is called an "[envelope system](http://en.wikipedia.org/wiki/Envelope_system)" you stuff money in envelopes and spend your money from those envelopes.
-
-Firefly III uses this method, which means you can create "envelopes" for any period. Example: € 200,- for "groceries" or € 500,- for "bills" every month. For more details you can also give transactions a category.
+To learn more about budgets, and budgeting, check out the [budgets page](/budgets/).
 
 ## Categories
 
-Categories are slightly different. You might start to notice how some things don't need a budget, but do need some kind of meta-thing. A category might work. "Furniture", "interest", "shoes" and "lunch" are perfect categories. If you create those in combination with budgets you can see exactly where your money is going. Other examples:
-
-* Daily groceries
-* Money management
-* Lunch
-* Car
-* Public transport
-* House
-
-Firefly III allows you to dynamically create and manage categories. Fancy charts will show you how your money is divided over categories.
-
-### The difference between categories and budgets
-
-If you can save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
-
-First and foremost: a category is "incidental". You don't buy new furniture every month but you might want to keep track of such expenses. Or you don't care about costs for public traffic (budget-wise) but a category would be nice.
-
-The rule of thumb is: would you make a real life envelope for it? If yes: budget. If no: category.
-
-If you need even more fine-grained control, you can use tags.
+To learn more about categories check out the [categories page](/categories/).
 
 ## Tags
 

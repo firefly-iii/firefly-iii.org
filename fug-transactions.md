@@ -34,3 +34,7 @@ Deposits have free-format field for the "[revenue account](/accounts/)". This wo
 ## Transfers
 
 Transfers have no free-format field. A transfer can only occur between existing asset accounts. But transfers can also be linked to [piggy banks](/piggy-banks/). So you could move € 200 to your savings account and have it added to your piggy bank "new couch".
+
+# Split transactions
+
+TODO I have to write about those!
