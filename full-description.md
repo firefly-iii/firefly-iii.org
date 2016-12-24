@@ -46,21 +46,7 @@ To learn more about categories check out the [categories page](/categories/).
 
 ## Tags
 
-Tags are an extension of categories and meant to expand on the meta-data included in a transaction. You can add multiple tags to a transaction.
-
-Firefly has implemented tags but they're not really meant to group transactions together, as you might think. This is because I haven't gotten around to it yet. Apart from the "normal" tags, Firefly supports two other types of tags. This is pretty advanced stuff though.
-
-### Advance payments
-
-Let's say you're in a restaurant, and decide to pay the bill for everybody to save the hassle. Still, you agreed to [go Dutch](https://en.wikipedia.org/wiki/Going_Dutch) so everybody should pay there share. Instead of paying you on the spot, they're going to transfer the money to you.
-
-Advance payment tags allow you to join the original expense and any deposits. So if you paid 150,- in advance and get 120,- back from your friends, Firefly III will only show you a 30,- expense. Neat huh?
-
-### Balancing money
-
-Sometimes I use money from my savings account for special expenses. For example, I bought fancy headset. I paid for it like I usually do. 100,- from my checking account. However, I simultaneously transfer 100,- from my savings account. This effectively "nulls" the transaction. It hasn't "cost" me anything, except the money from my savings account.
-
-Using "balancing act" tags I can nullify such transactions so they won't mess up my budgets.
+Tags can be used to tag transactions (duh). Read about them on the [tags page](/tags/).
 
 ## Piggy banks
 
