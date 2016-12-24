@@ -9,8 +9,8 @@ Firefly III comes [with this license](https://raw.githubusercontent.com/JC5/fire
 
 ## Security
 
-You should always run Firefly III on a site with TLS enabled (https://). Please note that although some parts of the
-database are encrypted (transaction descriptions, names, etc.) some parts are _not_ (amounts, dates, etc). If you need
+You should always run Firefly III on a site with TLS enabled (`https://`). Please note that although some parts of the
+database are encrypted (transaction descriptions, names, etc.) some parts are **not** (amounts, dates, some descriptions, etc). If you need
 more security, you must enable transparent database encryption or a comparable technology. Please remember that this
 is open source software under active development, and it is in no way guaranteed to be safe or secure.
 
