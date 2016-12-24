@@ -50,9 +50,7 @@ Tags can be used to tag transactions (duh). Read about them on the [tags page](/
 
 ## Piggy banks
 
-If you want to buy something expensive, you might need to save for it. Use piggy banks to save money. You can create piggy banks, set a target amount and start putting money in them. 
-
-The general gist is that saving money is difficult. So you could set a target amount, even set a target date and get reminded of when to add money to a piggy bank. If you have one year to save € 1200,- you could remind yourself monthly and Firefly will tell you to save € 100,- every month.
+Firefly supports the use of [piggy banks](/piggy-banks/) to save for big expenses.
 
 ## Bills
 

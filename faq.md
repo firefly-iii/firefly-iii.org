@@ -13,13 +13,17 @@ Firefly III is a web application written in PHP 7.0 with a database behind it th
 
 You must install it yourself on webhosting of your choice, or on a webserver you have access to. The [installation guide](/installation-guide/) can help you.
 
+### I have found a security related issue
+
+Please [contact me asap](/reporting-bugs-and-security-issues/).
+
 ### Can I use it on PHP 5.x?
 
 No. Most code has been written specifically for PHP 7.0 and higher.
 
 ### How do I use the "balancing act"-tag?
 
-Please read [the page about the balancing act tag](/balancing-act-tag/)
+Please read [the page about tags](/tags/)
 
 ### I have a problem installing or using it!
 
