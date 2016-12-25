@@ -54,7 +54,7 @@ Enter the directory where all the code is. To install all necessary packages, ru
 #### Configure Firefly III
 Configure Firefly III by doing the following:
 
-1. ``cp firefly-iii/.env.example firefly-iii/.env``
+1. `cp .env.example .env`
 2. ``php artisan key:generate``
 
 Open ``firefly-iii/.env`` and check out the instructions below. Fields in the ``.env`` file that are not mentioned here should not be changed unless you know what they're for.
