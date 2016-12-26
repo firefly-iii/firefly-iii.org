@@ -15,13 +15,11 @@ Of course, to get to know Firefly III first, and to see if it fits you, please c
 
 - The [screenshots](screenshots/) so you can see what it looks like;
 - The [feature list](features/) so you know what it does;
-- The [full description](description/), which will tell you how Firefly works, and the philosophy behind it.
+- The [full description](description/), which will tell you how Firefly works, and the philosophy behind it;
+- The [demo site](https://firefly-iii.nder.be/) so you can see what it's like.
+
 
 ### Then what?
-
-If you think you will like Firefly III, you should check out these resources:
-
-- You can try Firefly III for one month, for free, [on my personal website](try-firefly-iii/).
 
 If you decide you want to run Firefly III yourself (this is the mandatory next step), you should check out these resources:
 
