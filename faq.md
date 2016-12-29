@@ -13,6 +13,10 @@ Firefly III is a web application written in PHP 7.0 with a database behind it th
 
 You must install it yourself on webhosting of your choice, or on a webserver you have access to. The [installation guide](/installation-guide/) can help you.
 
+### Can I try it first?
+
+[Yes, you can!](https://firefly-iii.nder.be/)
+
 ### I have found a security related issue
 
 Please [contact me asap](/reporting-bugs-and-security-issues/).
