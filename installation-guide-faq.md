@@ -10,7 +10,7 @@ Some common errors:
 
 ### 404 when trying to visit login page
 
-Run `sudo a2enmod rewrite`.	Check if the database credentials in de `.env` file are correct. Restart Apache.
+Run `sudo a2enmod rewrite`.	Check if the database credentials in de `.env` file are correct. Make sure the directory where Firefly III installed has `AllowOverride All` in the Apache config. Restart Apache.
 
 ### 500 errors, logs are empty
 
