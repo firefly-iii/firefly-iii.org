@@ -8,9 +8,11 @@ permalink: /installation-guide-faq/
 
 Some common errors:
 
-### 404 when trying to visit login page
+### 404 when trying to visit login page or other pages.
 
-Run `sudo a2enmod rewrite`.	Check if the database credentials in de `.env` file are correct. Make sure the directory where Firefly III installed has `AllowOverride All` in the Apache config. Restart Apache.
+1. Run `sudo a2enmod rewrite`. Restart Apache.
+2. Check if the database credentials in de `.env` file are correct.
+3. Open your Apache config file. Find `<Directory /var/www>` (or similar). Change `AllowOverride None` to `AllowOverride All`. Restart Apache.
 
 ### 500 errors, logs are empty
 
@@ -49,7 +51,3 @@ in firefly-iii/app/Http/Controllers/Controller.php:55
 Solution: You haven't enabled or installed the Internationalization extension.
 
 If you are running FreeBSD, install ``pecl-intl``.
-
-### Cannot find /login or other URL's
-
-Make sure your Apache and/or nginx configuration is correct.
