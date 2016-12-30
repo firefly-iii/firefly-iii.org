@@ -4,10 +4,6 @@ title: Installation guide FAQ
 permalink: /installation-guide-faq/
 ---
 
-## Installation errors
-
-Some common errors:
-
 ### 404 when trying to visit login page or other pages.
 
 1. Run `sudo a2enmod rewrite`. Restart Apache.
