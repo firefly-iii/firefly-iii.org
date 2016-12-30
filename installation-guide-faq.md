@@ -8,6 +8,10 @@ permalink: /installation-guide-faq/
 
 Some common errors:
 
+### 404 when trying to visit login page
+
+Run `sudo a2enmod rewrite`.	Check if the database credentials in de `.env` file are correct. Restart Apache.
+
 ### 500 errors, logs are empty
 
 If the logs are empty (``storage/logs``) Firefly can't write to them. See above for the commands. If the logs still remain empty, do you have a the ``vendor`` in your Firefly root? If not, run the Composer commands.
@@ -19,7 +23,7 @@ PHP Parse error:  syntax error, unexpected '?' in
 app/Support/Twig/General.php on line 103
 ```
 
-Firefly III requires PHP 7.0.0.
+Firefly III requires PHP 7 or higher.
 
 ### BCMath
 
