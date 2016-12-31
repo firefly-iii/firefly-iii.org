@@ -37,4 +37,20 @@ Transfers have no free-format field. A transfer can only occur between existing 
 
 # Split transactions
 
-TODO I have to write about those!
+What has been described here are called "transaction journals". Firefly III stores each financial transaction in "journals". Each journal contains two "transactions". One takes money (-250 from your bank account) and the other one puts it into another account (+250 for Amazon.com).
+
+You can verify this by counting. There are always twice as many "transactions" as there are "transaction journals" in your database.
+
+This way, Firefly III tries to stay true to what a financial transaction is, which is kind of singular. Money moves from A to B, end of story. Nothing more. 
+
+However, often an expense tells a story. Just take grocery receipts for example. It's one expense sure, but it consists of many parts. And when you buy aspirin and bread at the same time, you might want to split the expense over two budgets, medication and groceries. A single expense would make you lose information.
+
+Likewise, your salary may have multiple components. Your base salary may be 1200. Minus 200 for taxes. Plus 100 bonus. Etc. All that information is lost when you only support singular, unsplitted deposit, like Firefly III usually does.
+
+However, any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
+
+- Assign part of an expense to a budget;
+- Assign different revenue accounts to parts of of a deposit.
+- Categorize money differently.
+
+You can split your entire groceries-receipt into small "sub"-transactions. You can specify each component of your salary.
