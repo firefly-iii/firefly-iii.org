@@ -10,7 +10,7 @@ Firefly has several types of accounts. This goes beyond your own bank accounts a
 ## Asset accounts
 Asset accounts are normal bank accounts. They hold your own money. Your bank account is an asset account. Your savings account is an asset account. They would be called "Savings account" or "Checking account". These accounts can be created with an initial (negative) balance, which is useful since you won't be entering your entire financial history.
 
-Asset accounts come in several flavours:
+Asset accounts come in three flavours:
 
 ### Default asset accounts
 This is the default kind of asset account.
@@ -18,20 +18,20 @@ This is the default kind of asset account.
 ### Shared asset accounts
 Shared asset accounts are shared with a partner, roommate or spouse. Use this to indicate that both (all) of you have access to this account.
 
-<hr>
+### Credit cards
+Used to indicate the asset account belongs to a credit card. Firefly does not (yet) respond to this, it's just for your administration.
 
+<hr>
 ## Expense accounts
 When you spend money, you do so at a store, online or maybe using cash. Each of these places gets its own expense account.
 
 <hr>
-
 ## Cash accounts
 Cash money is different though. When you withdraw money from an ATM and register it in Firefly, _don't_ register an expense account. Leave the field empty. This will make Firefly fall back to a specially designed "cash account".
 
 Likewise, if you deposit cash into an asset account, don't mention a revenue account (see below).
 
 <hr>
-
 ## Revenue accounts
 Another type of account is the revenue account. A revenue account belongs to anyone or any company that sends you money. These may be your employer, parents or friends. Possibly these are clients or the government.
 
