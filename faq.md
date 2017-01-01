@@ -31,4 +31,4 @@ Please read [the page about tags](/tags/)
 
 ### I have a problem installing or using it!
 
-[Open an issue](https://github.com/JC5/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).
+[Open an issue](https://github.com/firefly-iii/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).

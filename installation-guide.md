@@ -39,10 +39,10 @@ Go to the directory where you want to install Firefly III. Usually this is ``/va
 
 Once you're there, run the following command:
 
-- ``git clone https://github.com/JC5/firefly-iii.git``
+- ``git clone https://github.com/firefly-iii/firefly-iii.git``
    - Or variants of this command:
-   - ``git clone https://github.com/JC5/firefly-iii.git some-other-dir``
-   - ``git clone https://github.com/JC5/firefly-iii.git`` (defaults to ``firefly-iii``)
+   - ``git clone https://github.com/firefly-iii/firefly-iii.git some-other-dir``
+   - ``git clone https://github.com/firefly-iii/firefly-iii.git`` (defaults to ``firefly-iii``)
 
 Please keep in mind that the web root of Firefly III is in the ``./public/`` directory, so you may need to update your web server configuration to match this later on.
 

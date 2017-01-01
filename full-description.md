@@ -5,7 +5,7 @@ permalink: /description/
 show: yes
 ---
 
-This is the full description of how [Firefly III](https://github.com/JC5/firefly-iii) works. 
+This is the full description of how [Firefly III](https://github.com/firefly-iii/firefly-iii) works. 
 
 Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
 

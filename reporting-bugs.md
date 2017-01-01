@@ -19,5 +19,5 @@ Send me a message [by mail](mailto:thegrumpydictator@gmail.com). Do not open an 
 
 If you want, you can send me the log files directly [by mail](mailto:thegrumpydictator@gmail.com). I promise to keep them safe, and destroy them when I no longer need them. Whether or not you trust me to handle them with care, is up to you.
 
-You can also use PGP to encrypt data. [This is my public key](http://pool.sks-keyservers.net/pks/lookup?op=vindex&fingerprint=on&search=0xC16961E655E74B5E). It is the same key as I use to [sign commits](https://github.com/JC5/firefly-iii/commit/186b704509deaa17257ddd6956f579db2bb37d67). Send your data encrypted with that key, and I am the only one who will be able to read it.
+You can also use PGP to encrypt data. [This is my public key](http://pool.sks-keyservers.net/pks/lookup?op=vindex&fingerprint=on&search=0xC16961E655E74B5E). It is the same key as I use to [sign commits](https://github.com/firefly-iii/firefly-iii/commit/186b704509deaa17257ddd6956f579db2bb37d67). Send your data encrypted with that key, and I am the only one who will be able to read it.
 

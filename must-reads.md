@@ -5,7 +5,7 @@ permalink: /must-reads/
 ---
 
 ## The license
-Firefly III comes [with this license](https://raw.githubusercontent.com/JC5/firefly-iii/master/LICENSE).
+Firefly III comes [with this license](https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/LICENSE).
 
 ## Security
 
@@ -35,13 +35,13 @@ Firefly III uses the following libraries and tools:
 * The [real favicon generator](http://realfavicongenerator.net/)
 * The favicon has been [made by Oliver](http://www.flaticon.com/authors/madebyoliver).
 * Alternative icon has been made by [Freepik](http://www.freepik.com).
-* Various other open source components (see [composer.json](https://github.com/JC5/firefly-iii/blob/master/composer.json))
+* Various other open source components (see [composer.json](https://github.com/firefly-iii/firefly-iii/blob/master/composer.json))
 
 
 ## Current state
 
 Firefly III is pretty much all grown up. Full test coverage (nerd alert!) is coming.
 
-Questions, ideas, bugs or other things to contribute? [Let me know](https://github.com/JC5/firefly-iii/issues/new)!
+Questions, ideas, bugs or other things to contribute? [Let me know](https://github.com/firefly-iii/firefly-iii/issues/new)!
 
 If you like this tool, feel free to [donate me some beer money](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2ZMV952UUSCLU&lc=NL&item_name=Development%20of%20Firefly&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted). 
