@@ -14,6 +14,11 @@ If it has too few, it will feel childish and simple.
 Below is a list of most often requested features and their status.
 
 
+### Repeat budget amounts every month automatically
+Once you've set budgets for January, you would want to set them for February as well. And March, and April, etc. etc. Firefly does not support the automated creation of new budget amounts each week/month/year, and it will not support them.
+
+As it turns it's pretty complex to create these entries reliably and consistently. Then, there's the question of updating them, un-setting them, etc etc.
+
 ### Improvements to the import-routine
 
 Firefly III allows you to import data from other systems but it is not perfect.
@@ -46,4 +51,15 @@ But such a change, at this point, would effectively mean that the tool needs to 
 
 ### Exporting data to the MT940 format
 Although this would not bloat Firefly III too much, it is a lot of work and will probably never happen.
+
+### Pending income / financial planning / predicting income and expenses
+There have been a lot of ideas for "financial planning". The ability to schedule transactions, to plan expenses and deposits, and to be able to predict what is going to happen in the future.
+
+This idea fits financial planning as well: you would be able to predict your incomes by keeping a list somewhere.
+
+I feel that such a list would be part of a larger system that manages your invoices. The ability to create, manage and send invoices is something typical of a business finance system, as you mention. And being able just to see which invoices have yet to be paid seems to be "double administration": your business financial software should already keep track of this.
+
+As far as Firefly is concerned, such transactions could be part of "planned expenses" or rather "planned income" as another issue has suggested.
+
+It's not going to happen in the near future. Currently I'm focussing on the import/export and the ability to see what happened (past tense) using reports and charts. The extrapolation to the future is something that needs to be done manually, and that includes invoice management.
 
