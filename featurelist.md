@@ -38,3 +38,5 @@ Everything is organised:
 - Browse back and forth to see previous months or even years;
 - Lots of charts because we all love them;
 - Financial reporting showing you how well you are doing.
+
+There is also a list of [often requested features](/requested-features/).
