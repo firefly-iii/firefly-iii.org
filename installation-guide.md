@@ -37,7 +37,7 @@ Use your MySQL credentials (you created these when you installed MySQL, or you h
 #### Download Firefly III
 Go to the directory where you want to install Firefly III. Usually this is `/var/www/html`. 
 
-Once you're there, run the following command:
+Once you're there, run the following command (on one line):
 
 - `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
 
@@ -104,7 +104,7 @@ Answer YES to the questions. If this command does n work, first `cd` into the `f
 
 #### Visit Firefly III
 
-Surf to your web server. The `public/` directory is your root. You may want to change your web server's configuration so you can surf to `/` and get Firefly.
+Surf to your web server. The `firefly-iii/public/` directory is your root. You may want to change your web server's configuration so you can surf to `/` and get Firefly.
 
 You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
 
