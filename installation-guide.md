@@ -14,7 +14,7 @@ The hardest part of this installation manual is installing Apache (or nginx), an
 
 Installing Firefly III itself is fairly easy, because composer and Laravel are easy to handle.
 
-There is also a [Docker file](/installation-guide-docker/).
+There is also a [Docker file](/installation-guide-docker/) for those of you who know what that means.
 
 ### Server preparations
 
@@ -32,39 +32,34 @@ This should get you up and running. Now, follow the "installation steps".
 SSH into your server, or otherwise access it. If SSH is not installed, please refer back to the server preparations. Beware though, I am not yet sure what the command is to install SSH on a CentOS machine.
 
 #### Create a new database and user account
-Use your MySQL credentials (you created these when you installed MySQL, or you had them already) to create a new database called ``firefly-iii`` and a user ``firefly-iii``. Please give this user a strong password, and access to the database.
+Use your MySQL credentials (you created these when you installed MySQL, or you had them already) to create a new database called `firefly-iii` and a user `firefly-iii`. Please give this user a strong password, and access to the database.
 
 #### Download Firefly III
-Go to the directory where you want to install Firefly III. Usually this is ``/var/www/html``. 
+Go to the directory where you want to install Firefly III. Usually this is `/var/www/html`. 
 
 Once you're there, run the following command:
 
-- ``git clone https://github.com/firefly-iii/firefly-iii.git``
-   - Or variants of this command:
-   - ``git clone https://github.com/firefly-iii/firefly-iii.git some-other-dir``
-   - ``git clone https://github.com/firefly-iii/firefly-iii.git`` (defaults to ``firefly-iii``)
+- `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
 
-Please keep in mind that the web root of Firefly III is in the ``./public/`` directory, so you may need to update your web server configuration to match this later on.
+This will install Firefly III in the `firefly-iii` directory.
 
-#### Install packages
-Enter the directory where all the code is. To install all necessary packages, run:
-
-1. ``composer install --no-scripts --no-dev``
+Please keep in mind that the web root of Firefly III is the `firefly-iii/public/` directory, so you may need to update your web server configuration to match this later on.
 
 #### Configure Firefly III
-Configure Firefly III by doing the following:
 
-1. `cp .env.example .env`
-2. ``php artisan key:generate``
+Go into the `firefly-iii` directory and run this command:
 
-Open ``firefly-iii/.env`` and check out the instructions below. Fields in the ``.env`` file that are not mentioned here should not be changed unless you know what they're for.
+- `php artisan key:generate`
+
+
+Then, open the `.env`-file and check out the instructions below. Fields in the `.env`-file that are not mentioned here should not be changed unless you know what they're for.
 
 #### APP settings
 
-* ``APP_DEBUG`` set this to true when you file a bug. It will enable detailed errors.
-* ``APP_FORCE_SSL`` Firefly III knows if you use http or https. To force https, set this to true.
-* ``APP_FORCE_ROOT`` Firefly III knows its own web address. If it is mistaken, fill in this field
-* ``APP_LOG_LEVEL`` Change this to get more detailed logging.
+* `APP_DEBUG` set this to true when you file a bug. It will enable detailed errors.
+* `APP_FORCE_SSL` Firefly III knows if you use http or https. To force https, set this to true.
+* `APP_FORCE_ROOT` Firefly III knows its own web address. If it is mistaken, fill in this field
+* `APP_LOG_LEVEL` Change this to get more detailed logging.
 
 #### DB settings
 
@@ -72,9 +67,9 @@ Change these settings to match your MySQL settings. Almost always, only the user
 
 ##### COOKIE settings
 
-* ``COOKIE_PATH`` Tie the cookies to a specific path if necessary
-* ``COOKIE_DOMAIN`` Tie the cookies to a specific domain
-* ``COOKIE_SECURE`` Only use cookies over https
+* `COOKIE_PATH` Tie the cookies to a specific path if necessary
+* `COOKIE_DOMAIN` Tie the cookies to a specific domain
+* `COOKIE_SECURE` Only use cookies over https
 
 #### MAIL settings
 
@@ -82,41 +77,34 @@ These are important so pay attention. Use your GMail account or create an accoun
 
 Whatever mail service you use, they can tell you what these settings are.
 
-* ``MAIL_DRIVER`` Is usually smtp, but could be sendmail too.
-* ``MAIL_HOST`` The (SMTP) host.
-* ``MAIL_PORT`` The port, if relevant.
-* ``MAIL_FROM`` The "from"-address
-* ``MAIL_USERNAME`` The user name for the (SMTP) host.
-* ``MAIL_PASSWORD`` The password.
-* ``MAIL_ENCRYPTION`` If relevant. Usually TLS or SSL.
+* `MAIL_DRIVER` Is usually smtp, but could be sendmail too.
+* `MAIL_HOST` The (SMTP) host.
+* `MAIL_PORT` The port, if relevant.
+* `MAIL_FROM` The "from"-address
+* `MAIL_USERNAME` The user name for the (SMTP) host.
+* `MAIL_PASSWORD` The password.
+* `MAIL_ENCRYPTION` If relevant. Usually TLS or SSL.
 
 #### Other settings
 
-* ``SEND_REGISTRATION_MAIL`` Send new users a email for their registration. Leave this on true, it's useful for your own registration.
-* ``MUST_CONFIRM_ACCOUNT`` Is usually quite pointless for you so leave it to false.
-* ``SHOW_INCOMPLETE_TRANSLATIONS`` Set this to true and you'll see all the weird languages Firefly III supports that are only half-translated.
-* ``ANALYTICS_ID`` Put in a GA analytics ID if you want.
-* ``SITE_OWNER`` Fill in your own email address.
+* `SEND_REGISTRATION_MAIL` Send new users a email for their registration. Leave this on true, it's useful for your own registration.
+* `SHOW_INCOMPLETE_TRANSLATIONS` Set this to true and you'll see all the weird languages Firefly III supports that are only half-translated.
+* `ANALYTICS_ID` Put in a GA analytics ID if you want.
+* `SITE_OWNER` Fill in your own email address.
 
-Any other settings, such as in the ``config`` directory should not be changed.
+Any other settings, such as in the `config` directory should not be changed.
 
 #### Install the database
 
 Run the following command to install the database:
 
-* ``php artisan migrate --seed --env=production``
+* `php artisan migrate --seed --env=production`
 
-Answer YES to the questions.
-
-#### Finish the installation
-
-Finally, run the following command to finish the installation:
-
-1. ``composer install --no-dev``
+Answer YES to the questions. If this command does n work, first `cd` into the `firefly-iii` directory.
 
 #### Visit Firefly III
 
-Surf to your web server. The ``public/`` directory is your root. You may want to change your web server's configuration so you can surf to ``/`` and get Firefly.
+Surf to your web server. The `public/` directory is your root. You may want to change your web server's configuration so you can surf to `/` and get Firefly.
 
 You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
 
