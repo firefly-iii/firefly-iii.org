@@ -17,6 +17,7 @@ Todo.
 * Run `rm -rf bootstrap/cache/*`
 * Run `php artisan migrate --env=production`
 * Run `php artisan cache:clear`
+* Run `php artisan firefly:upgrade-database`
 
 ## Installed Firefly using Git (alternative)
 
@@ -28,3 +29,4 @@ Todo.
 * Run `composer install --no-dev`
 * Run `php artisan migrate --env=production`
 * Run `php artisan cache:clear`
+* Run `php artisan firefly:upgrade-database`
