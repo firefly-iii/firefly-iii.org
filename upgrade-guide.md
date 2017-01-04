@@ -4,27 +4,27 @@ title: Upgrade guide
 permalink: /upgrade-guide/
 ---
 
-Firefly III has had a long and stormy history. Upgrading may prove to be difficult.
+Firefly III has had a long and stormy history. There are two ways of installing Firefly III, so there are two ways to upgrade:
 
-So far the most fool-proof way of upgrading I have found is installing Firefly III using a git checkout / composer update routine (see the [installation page](https://firefly-iii.github.io/installation-guide/)).
+## Installed Firefly using "create-project"
 
-Other methods (recommended by me in the past, mea culpa) will not allow you to update easily.
+Todo.
 
-## Upgrading
+## Installed Firefly using Git
 
-* Go to the ``firefly-iii`` folder.
-* Run ``git pull``
-* Run ``rm -rf bootstrap/cache/*``
-* Run ``php artisan migrate --env=production``
+* Go to the `firefly-iii` folder.
+* Run `git pull`
+* Run `rm -rf bootstrap/cache/*`
+* Run `php artisan migrate --env=production`
+* Run `php artisan cache:clear`
 
-That should do it!
+## Installed Firefly using Git (alternative)
 
-### Alternative
-
-* Go to the ``firefly-iii`` folder.
-* Run ``git pull``
-* RUN ``rm -rf bootstrap/cache/*``
-* Run ``rm -rf vendor/``
-* Run ``composer install --no-scripts --no-dev``
-* Run ``composer install --no-dev``
-* Run ``php artisan migrate --env=production``
+* Go to the `firefly-iii` folder.
+* Run `git pull`
+* Run `rm -rf bootstrap/cache/*`
+* Run `rm -rf vendor/`
+* Run `composer install --no-scripts --no-dev`
+* Run `composer install --no-dev`
+* Run `php artisan migrate --env=production`
+* Run `php artisan cache:clear`
