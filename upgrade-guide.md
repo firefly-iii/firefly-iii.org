@@ -25,6 +25,7 @@ Then, run the following commands to finish the upgrade:
 * `cd firefly-iii-updated`
 * `rm -rf bootstrap/cache/*`
 * `php artisan migrate --env=production`
+  * Answer yes when asked.
 * `php artisan cache:clear`
 * `php artisan firefly:upgrade-database`
 
@@ -39,6 +40,7 @@ To make sure your webserver serves you the new Firefly III:
 * Run `git pull`
 * Run `rm -rf bootstrap/cache/*`
 * Run `php artisan migrate --env=production`
+  * Answer yes when asked.
 * Run `php artisan cache:clear`
 * Run `php artisan firefly:upgrade-database`
 
@@ -51,5 +53,6 @@ To make sure your webserver serves you the new Firefly III:
 * Run `composer install --no-scripts --no-dev`
 * Run `composer install --no-dev`
 * Run `php artisan migrate --env=production`
+  * Answer yes when asked.
 * Run `php artisan cache:clear`
 * Run `php artisan firefly:upgrade-database`
