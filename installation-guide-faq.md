@@ -10,10 +10,10 @@ Ensure with `dpkg-reconfigure locales` that the language you want to use is inst
 
 In order to make the demo site work (it's an Ubuntu server) I run these commands:
 
-* sudo apt-get install -y language-pack-en-base
-* sudo apt-get install -y language-pack-nl-base
-* sudo apt-get install -y language-pack-de-base
-* sudo apt-get install -y language-pack-pt-base
+* `sudo apt-get install -y language-pack-en-base`
+* `sudo apt-get install -y language-pack-nl-base`
+* `sudo apt-get install -y language-pack-de-base`
+* `sudo apt-get install -y language-pack-pt-base`
 
 That should take care of most issues.
 
