@@ -112,4 +112,4 @@ It may seem strange to register on your own website but there you are.
 
 ### Often seen errors
 
-Please see the [installation guide FAQ](/installation-guide-faq/) for more information.
+Please see the [installation guide FAQ](/installation-guide-faq/) for more information and often encountered problems.
