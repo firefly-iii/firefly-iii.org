@@ -56,3 +56,27 @@ To make sure your webserver serves you the new Firefly III:
   * Answer yes when asked.
 * Run `php artisan cache:clear`
 * Run `php artisan firefly:upgrade-database`
+
+
+# Common upgrade problems
+
+## The database stores no more than 4 decimals
+
+Firefly supports up to 12 decimal numbers for currencies (in order to support Bitcoin and other cryptocurrencies). However, your database may not have been migrated correctly. User [@xpfgsyb](https://github.com/xpfgsyb) has kindly provided the following fix.
+
+* Connect to mysql: `mysql -u user -p`
+* Switch to the firefly database, change if your setup differs: `use firefly;`
+* Check the actual column type of amount: `SHOW COLUMNS FROM transactions;`
+* If the type is decimal(14,4), change it with this command: `ALTER TABLE transactions MODIFY COLUMN amount decimal(22,12);`
+* Recheck if the type is ok now: `SHOW COLUMNS FROM transactions;`
+* Exit: `exit;`
+
+You should repeat this procedure for other tables as well if necessary:
+
+* Table `accounts`, field `virtual_balance`
+* Table `available_budgets`, field `amount`
+* Table `bills`, fields `amount_min` and `amount_max`
+* Table `budget_limits`, field `amount`
+* Table `piggy_bank_events`, field `amount`
+* Table `piggy_bank_repetitions`, field `currentamount`
+* Table `piggy_banks`, field `targetamount`
