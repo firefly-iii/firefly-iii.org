@@ -60,6 +60,26 @@ To make sure your webserver serves you the new Firefly III:
 
 # Common upgrade problems
 
+## Upgrading from a very old version
+
+When you have used Firefly for a long time you will find it can be difficult to upgrade. The database migrations may no longer work or other problems pop up. Here is what user [@webenhanced](https://github.com/webenhanced) did when upgrading from version 3.7 to 4.3. Quite a big step.
+
+* Renamed `firefly-iii` directory to `firefly-iii-3.7`
+* Renamed `firefly` DB to `firefly_3.7`
+* Created new DB named `firefly` (with same user)
+* Run `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
+* Merged `firefly-iii-3.7/.env` into `firefly-iii/.env`
+* Run `php artisan migrate --seed --env=production`
+* Using phpMyAdmin, exported new firefly DB structure only and used the SQL file in an editor as a reference
+* Adjusted each column in each table of the `firefly_3.7` DB with new definitions to match the newly created `firefly` DB
+* Removed, added, or edited all the CONSTRAINTS using phpMyAdmin "Relation View"
+* Removed no longer used tables and columns
+( Renamed `firefly` DB to `firefly_4.3dist`
+* Copied `firefly_3.7` DB to a new `firefly` (so now we are using the original DB with 4.3 structure updates)
+* Run `php artisan cache:clear`
+* Run `php artisan firefly:upgrade-database` (this did something to the entries in budget_limits table)
+* Navigated in the browser to the site.
+
 ## The database stores no more than 4 decimals
 
 Firefly supports up to 12 decimal numbers for currencies (in order to support Bitcoin and other cryptocurrencies). However, your database may not have been migrated correctly. User [@xpfgsyb](https://github.com/xpfgsyb) has kindly provided the following fix.

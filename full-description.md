@@ -54,7 +54,7 @@ Firefly supports the use of [piggy banks](/piggy-banks/) to save for big expense
 
 ## Bills
 
-Rent. Comes back every month. Create a bill and Firefly will not only match new withdrawals to bills but also show you which bills are still due and which ones aren't. 
+Your rent, phone bill and other monthly (yearly) repeating expenses can be tracked using [bills](/bills/). Create a [bill](/bills/) and Firefly will help you keep track of such repeating expenses.
 
 ## Reports 
 
