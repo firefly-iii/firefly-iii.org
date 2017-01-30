@@ -1,0 +1,73 @@
+vagrant@vagrant-ubuntu-trusty-64:/sites/FF3/original-installations$ composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist
+Installing grumpydictator/firefly-iii (4.3.3)
+  - Installing grumpydictator/firefly-iii (4.3.3) Downloading: 100%
+Created project in /sites/FF3/original-installations/firefly-iii
+> php -r "file_exists('.env') || copy('.env.example', '.env');"
+Loading composer repositories with package information
+Installing dependencies from lock file
+Package operations: 48 installs, 0 updates, 0 removals
+  - Installing bacon/bacon-qr-code (1.0.1) Loading from cache
+  - Installing nikic/php-parser (v3.0.2) Loading from cache
+  - Installing classpreloader/classpreloader (3.1.0) Loading from cache
+  - Installing vlucas/phpdotenv (v2.4.0) Loading from cache
+  - Installing symfony/polyfill-mbstring (v1.3.0) Loading from cache
+  - Installing symfony/var-dumper (v3.1.10) Loading from cache
+  - Installing symfony/translation (v3.1.10) Loading from cache
+  - Installing symfony/routing (v3.1.10) Loading from cache
+  - Installing symfony/process (v3.1.10) Loading from cache
+  - Installing symfony/http-foundation (v3.1.10) Loading from cache
+  - Installing symfony/event-dispatcher (v3.2.2) Loading from cache
+  - Installing psr/log (1.0.2) Loading from cache
+  - Installing symfony/debug (v3.1.10) Loading from cache
+  - Installing symfony/http-kernel (v3.1.10) Loading from cache
+  - Installing symfony/finder (v3.1.10) Loading from cache
+  - Installing symfony/console (v3.1.10) Loading from cache
+  - Installing swiftmailer/swiftmailer (v5.4.5) Loading from cache
+  - Installing paragonie/random_compat (v2.0.4) Loading from cache
+  - Installing ramsey/uuid (3.5.2) Loading from cache
+  - Installing jakub-onderka/php-console-color (0.1) Loading from cache
+  - Installing jakub-onderka/php-console-highlighter (v0.3.2) Loading from cache
+  - Installing dnoegel/php-xdg-base-dir (0.1) Loading from cache
+  - Installing psy/psysh (v0.8.1) Loading from cache
+  - Installing nesbot/carbon (1.22.1) Loading from cache
+  - Installing mtdowling/cron-expression (v1.2.0) Loading from cache
+  - Installing monolog/monolog (1.22.0) Loading from cache
+  - Installing league/flysystem (1.0.33) Loading from cache
+  - Installing symfony/polyfill-util (v1.3.0) Loading from cache
+  - Installing symfony/polyfill-php56 (v1.3.0) Loading from cache
+  - Installing jeremeamia/superclosure (2.3.0) Loading from cache
+  - Installing doctrine/inflector (v1.1.0) Loading from cache
+  - Installing laravel/framework (v5.3.29) Loading from cache
+  - Installing davejamesmiller/laravel-breadcrumbs (3.0.1) Loading from cache
+  - Installing doctrine/lexer (v1.0.1) Loading from cache
+  - Installing doctrine/annotations (v1.3.1) Loading from cache
+  - Installing doctrine/cache (v1.6.1) Loading from cache
+  - Installing doctrine/collections (v1.4.0) Loading from cache
+  - Installing doctrine/common (v2.7.2) Loading from cache
+  - Installing doctrine/dbal (v2.5.10) Loading from cache
+  - Installing laravelcollective/html (v5.3.1) Loading from cache
+  - Installing league/commonmark (0.15.3) Loading from cache
+  - Installing league/csv (8.2.0) Loading from cache
+  - Installing christian-riesen/base32 (1.3.1) Loading from cache
+  - Installing pragmarx/google2fa (v1.0.1) Loading from cache
+  - Installing twig/twig (v1.30.0) Loading from cache
+  - Installing rcrowe/twigbridge (v0.9.4) Loading from cache
+  - Installing rmccue/requests (v1.7.0) Loading from cache
+  - Installing watson/validating (3.0.1) Loading from cache
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postInstall
+> php artisan optimize
+Generating optimized class loader
+Compiling common classes
+> php artisan firefly:instructions install
++------------------------------------------------------------------------------+
+|                                                                              |
+| Thank you for installing Firefly III, v4.3.3!                                |
+| Welcome to Firefly! Make sure you follow the installation guide. If you      |
+| need more help, please check Github or the Firefly III website. The          |
+| installation guide has a FAQ which you should check out as well.             |
+|                                                                              |
++------------------------------------------------------------------------------+
+> php artisan key:generate
+Application key [base64:UZZroIPjNA8tJXoRl2Q6z85HTF3jz1jl22c/MJtUXvY=] set successfully.
+vagrant@vagrant-ubuntu-trusty-64:/sites/FF3/original-installations$

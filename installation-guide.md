@@ -45,14 +45,11 @@ This will install Firefly III in the `firefly-iii` directory.
 
 Please keep in mind that the web root of Firefly III is the `firefly-iii/public/` directory, so you may need to update your web server configuration to match this later on.
 
+The output of [this command must look like this](/static/installation-output.txt).
+
 #### Configure Firefly III
 
-Go into the `firefly-iii` directory and run this command:
-
-- `php artisan key:generate`
-
-
-Then, open the `.env`-file and check out the instructions below. Fields in the `.env`-file that are not mentioned here should not be changed unless you know what they're for.
+Open the `.env`-file in the `firefly-iii` directory and check out the instructions below. Fields in the `.env`-file that are not mentioned here should not be changed unless you know what they're for.
 
 #### APP settings
 
