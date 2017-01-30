@@ -26,6 +26,7 @@ Firefly III allows you to import data from other systems but it is not perfect.
 - Firefly III can only import CSV files. No MT940, HBCI, FinTS, or other formats are currently supported. No other formats will be supported until it is clear what the [PSD2](https://en.wikipedia.org/wiki/Payment_Services_Directive#Revised_Directive_on_Payment_Services_.28PSD2.29) will mean for financial institutions.
 - This is a bit technical, but currently the import routine cannot handle all information coming from CSV files. It breaks down when there are multiple entries in a CSV-line for the same thing. For example, there is both an IBAN and a name for the opposing account. This is something Firefly can't handle. 
 - The ability to import YNAB will be finished once the above point is fixed. YNAB has very weird CSV files.
+- Firefly III will never be able to automatically import data from (insert your bank here).
 
 ### Implementing an API
 This is an attractive feature and would put Firefly III in the middle of a whole "eco system" of financial tools that could write to Firefly's database, through some JSON / XML / WebServices frontend. It's an attractive idea but a lot of work so it does not have much priority. 
@@ -37,7 +38,7 @@ If you would like to share your accounts and transactions with (for example) you
 
 Just about every page, every request and every query that refers to user data is secured with a check to see if that data actually belongs to that user. About 95% of Firefly would be affected when the source-code would have to check for (possible) other users who may also have access to the data.
 
-With the links between objects, such as transactions and budgets, accounts and piggy banks and various others, many times the choice will have to be made what to "include" when sharing data. When sharing, as you mention, just the account and transactions, there is still the choice whether or not to share budgets, categories, attachments, etc. etc. This could be all, or nothing, or something in between which would make this very complex.
+With the links between objects, such as transactions and budgets, accounts and piggy banks and various others, many times the choice will have to be made what to "include" when sharing data. When sharing just the account and transactions, there is still the choice whether or not to share budgets, categories, attachments, etc. etc. This could be all, or nothing, or something in between which would make this very complex.
 
 Related to this question is the question what the other user may do with the data, apart from viewing it. Could the other user attach categories? Their own categories perhaps? Or can the other user access the first user's categories? Would that user have to permit that first?
 
@@ -52,14 +53,16 @@ But such a change, at this point, would effectively mean that the tool needs to 
 ### Exporting data to the MT940 format
 Although this would not bloat Firefly III too much, it is a lot of work and will probably never happen.
 
-### Pending income / financial planning / predicting income and expenses
-There have been a lot of ideas for "financial planning". The ability to schedule transactions, to plan expenses and deposits, and to be able to predict what is going to happen in the future.
+### Financial planning
 
-This idea fits financial planning as well: you would be able to predict your incomes by keeping a list somewhere.
+_Including, but not limited to: managing invoices, predicting income and expenses, writing down pending incomes, running a business using Firefly III._
 
-I feel that such a list would be part of a larger system that manages your invoices. The ability to create, manage and send invoices is something typical of a business finance system, as you mention. And being able just to see which invoices have yet to be paid seems to be "double administration": your business financial software should already keep track of this.
+There have been a lot of ideas for "financial planning" and "financial management".
 
-As far as Firefly is concerned, such transactions could be part of "planned expenses" or rather "planned income" as another issue has suggested.
+#### Running a business using Firefly III
 
-It's not going to happen in the near future. Currently I'm focussing on the import/export and the ability to see what happened (past tense) using reports and charts. The extrapolation to the future is something that needs to be done manually, and that includes invoice management.
+Although there are some data-fields that can be used for business expenses, Firefly III will never move its focus from personal finance to business finance.
 
+#### Predicting or planning the future using Firefly III
+
+Extrapolating the future from your current financial records is something Firefly III will not support.
