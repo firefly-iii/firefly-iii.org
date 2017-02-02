@@ -4,109 +4,111 @@ title: Installation guide
 permalink: /installation-guide/
 ---
 
-# Normal installation
+# Introduction
+This installation guide focuses on the installation of [Firefly III](https://github.com/firefly-iii/firefly-iii) only.
 
-Have you seen the [system requirements](/system-requirements/)? If so, please continue!
+If you need to upgrade, check out the [upgrade guide](https://firefly-iii.github.io/upgrade-guide/). If something is not working, checkout the [FAQ](/installation-guide-faq/)!
 
-## Introduction
+If you want to install Firefly III using Docker, checkout the [Docker instructions](https://firefly-iii.github.io/installation-guide-docker/).
 
-The hardest part of this installation manual is installing Apache (or nginx), and PHP 7. Most Linux installations come with PHP 5 so you need to upgrade it.
+The installation guide is just three steps!
 
-Installing Firefly III itself is fairly easy, because composer and Laravel are easy to handle.
+## Prerequisites
+You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.0. There are many tutorials that will help you install one. For example:
 
-There is also a [Docker file](/installation-guide-docker/) for those of you who know what that means.
+1. [A guide to install a LAMP stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
+2. [A guide to update to PHP 7.0](https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7)
 
-### Server preparations
+You also need an email address and the associated password and server settings. You can safely use your own email address. If you prefer not to, you can register a free email account at [GMail](https://accounts.google.com/SignUp?service=mail) or [Outlook](https://outlook.live.com/owa/)
 
-Take your pick:
+## 1. Preparing your server
 
-1. Server preparations for [Ubuntu 14.xx](/server-prep-ubu-14/)
-2. Server preparations for [Ubuntu 16.xx](/server-prep-ubu-16/)
-3. Server preparations for [CentOS](/server-prep-centos/)
+### Extra packages
 
-This should get you up and running. Now, follow the "installation steps".
+Install the following PHP modules:
 
-### Installation steps
+* PHP BCMath Arbitrary Precision Mathematics
+* PHP Mcrypt
+* PHP Internationalization extension
+* PHP MBstring
+* PHP Curl
 
-#### Access your server
-SSH into your server, or otherwise access it. If SSH is not installed, please refer back to the server preparations. Beware though, I am not yet sure what the command is to install SSH on a CentOS machine.
+You can search the web to find out how to install these modules. Some may be installed already.
 
-#### Create a new database and user account
-Use your MySQL credentials (you created these when you installed MySQL, or you had them already) to create a new database called `firefly-iii` and a user `firefly-iii`. Please give this user a strong password, and access to the database.
+### Apache configuration
 
-#### Download Firefly III
-Go to the directory where you want to install Firefly III. Usually this is `/var/www/html`. 
+If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file (its location differs, but it is probably in `/etc/apache2`).
 
-Once you're there, run the following command (on one line):
+Find the line that starts with `<Directory /var/www>`. If you see `/`, keep looking!
 
-- `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
+You will see the text `AllowOverride None` right below it. Change it to `AllowOverride All`.
 
-This will install Firefly III in the `firefly-iii` directory.
+### nginx configuration
 
-Please keep in mind that the web root of Firefly III is the `firefly-iii/public/` directory, so you may need to update your web server configuration to match this later on.
+If you run nginx, the configuration should be fine. You'll just have to search the web on how to run PHP7 in nginx. You can check out [my own nginx configuration](/static/nginx.txt).
 
-The output of [this command must look like this](/static/installation-output.txt).
+### Installing composer
 
-#### Configure Firefly III
+If you have sudo rights (try `sudo ls`) you can install composer using the following command:
 
-Open the `.env`-file in the `firefly-iii` directory and check out the instructions below. Fields in the `.env`-file that are not mentioned here should not be changed unless you know what they're for.
+```
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+```
 
-#### APP settings
+Verify the installation of composer using the following command.
 
-* `APP_DEBUG` set this to true when you file a bug. It will enable detailed errors.
-* `APP_FORCE_SSL` Firefly III knows if you use http or https. To force https, set this to true.
-* `APP_FORCE_ROOT` Firefly III knows its own web address. If it is mistaken, fill in this field
-* `APP_LOG_LEVEL` Change this to get more detailed logging.
+`composer -v`
 
-#### DB settings
+This concludes the server preparations!
 
-Change these settings to match your MySQL settings. Almost always, only the username, password and database need to be changed.
+## 2. Installing Firefly
+### Main command
+Browse to `/var/www` which is probably the directory where your web server is configured to find its files.
 
-##### COOKIE settings
+Enter the following command. 
 
-* `COOKIE_PATH` Tie the cookies to a specific path if necessary
-* `COOKIE_DOMAIN` Tie the cookies to a specific domain
-* `COOKIE_SECURE` Only use cookies over https
+`composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
 
-#### MAIL settings
+If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
 
-These are important so pay attention. Use your GMail account or create an account at mailtrap.io. Firefly III uses these settings to mail error reports and detailed crash information if necessary. In the future, Firefly III will use these settings to mail you financial reports and stuff like that.
+### Configuration
 
-Whatever mail service you use, they can tell you what these settings are.
+In the `firefly-iii` directory you will find a `.env` file. Open this file using your favorite editor.
 
-* `MAIL_DRIVER` Is usually smtp, but could be sendmail too.
-* `MAIL_HOST` The (SMTP) host.
-* `MAIL_PORT` The port, if relevant.
-* `MAIL_FROM` The "from"-address
-* `MAIL_USERNAME` The user name for the (SMTP) host.
-* `MAIL_PASSWORD` The password.
-* `MAIL_ENCRYPTION` If relevant. Usually TLS or SSL.
+In the list below you will see each value in this file and what you must put there. If a value from the `.env` file is not mentioned, you should ignore it.
 
-#### Other settings
+Field | Meaning
+----- | -------
+`APP_DEBUG` | Set this to true when you file a bug. It will enable detailed errors.
+`APP_FORCE_SSL` | Firefly III knows if you use http or https. To force https, set this to true.
+`APP_FORCE_ROOT` | Firefly III knows its own web address. If it is mistaken, fill in this field
+`APP_LOG_LEVEL` | Change this to get more detailed logging.
+`DB_*` | Change this to match your database settings.
+`COOKIE_PATH` | Tie the cookies to a specific path if necessary
+`COOKIE_DOMAIN` | Tie the cookies to a specific domain if necessary
+`COOKIE_SECURE` | Only use cookies over https (off by default)
+`MAIL_*` | Update this to reflect your email settings.
+`SHOW_INCOMPLETE_TRANSLATIONS` | Set this to true if you want to use incomplete translations.
+`GOOGLE_MAPS_API_KEY` | You _may_ fill this in if you expect your Firefly III installation to contain and show over 10.000 tags.
+`ANALYTICS_ID` | If you want to see analytics for your own Firefly III installation
+`SITE_OWNER` | **Important** Fill in your email address.
+`DEMO_USERNAME` | Leave empty!
+`DEMO_PASSWORD` | Leave empty!
 
-* `SEND_REGISTRATION_MAIL` Send new users a email for their registration. Leave this on true, it's useful for your own registration.
-* `SHOW_INCOMPLETE_TRANSLATIONS` Set this to true and you'll see all the weird languages Firefly III supports that are only half-translated.
-* `ANALYTICS_ID` Put in a GA analytics ID if you want.
-* `SITE_OWNER` Fill in your own email address.
+### Make sure the web server user has access rights.
+Especially when you install Firefly III using `sudo`, the web server may not have (write) access to the Firefly III directory. To make sure that the webserver can run Firefly, run the following commands:
 
-Any other settings, such as in the `config` directory should not be changed.
+* `sudo chown -R www-data:www-data /var/www/firefly-iii` (or wherever it is installed)
+* `sudo chmod -R 775 /var/www/firefly-iii/storage` (or wherever it is installed)
 
-#### Install the database
+Now you should be able to visit [http://localhost/firefly-iii**/public**](http://localhost/firefly-iii/public) and see Firefly.
 
-Run the following command to install the database:
+## 3. Accessing Firefly
+### Browsing to site
+Browsing to the site should be easy. You should see a login screen. If you see empty pages, or "Whoops" errors, open the `.env` file again and change `APP_DEBUG` from `false` to `true`. Also change `APP_LOG_LEVEL` to `debug`. This will give you some insight in what is happening. If you don't know what to do, [open an issue](https://github.com/firefly-iii/firefly-iii/issues/new) and I will help you.
 
-* `php artisan migrate --seed --env=production`
+### Registering an account
+You cannot login yet. Click on "Register a new account" and fill in the form.
 
-Answer YES to the questions. If this command does n work, first `cd` into the `firefly-iii` directory.
-
-#### Visit Firefly III
-
-Surf to your web server. The `firefly-iii/public/` directory is your root. You may want to change your web server's configuration so you can surf to `/` and get Firefly.
-
-You will see a Sign In screen. Use the Register pages to create a new account. After you've created a new account, you will get an introduction screen.
-
-It may seem strange to register on your own website but there you are.
-
-### Often seen errors
-
-Please see the [installation guide FAQ](/installation-guide-faq/) for more information and often encountered problems.
+### Your first accounts
+You will be logged in automatically. Follow the instructions and you are done!

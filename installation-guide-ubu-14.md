@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Server preparation for Ubuntu 14.x
-permalink: /server-prep-ubu-14/
+title: Installation guide for Ubuntu 14.xx
+permalink: /installation-guide/ubuntu-14-xx/
 ---
 
 # Ubuntu 14.x
@@ -12,6 +12,10 @@ First, make sure your server is up to date:
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
+## Install MySQL
+
+Please follow this [digital ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04) to install MySQL.
 
 ## Install MySQL and other packages
 

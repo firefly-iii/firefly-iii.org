@@ -4,7 +4,7 @@ title: System requirements
 permalink: /system-requirements/
 ---
 
-Firefly III requires the following things. 
+Firefly III requires the following things to be installed and ready to use.
 
 - PHP 7
 - MySQL, SQLite, Postgres or SQL server.
@@ -18,7 +18,7 @@ Firefly III requires the following things.
 
 Because Firefly III needs some special tools to install it, you must have access to the terminal on your web server. It's simply not enough to have web hosting where you may upload stuff. In theory however, it is possible to do all of this locally and then upload it to your web server.
 
-[Please continue to the installation guide](../installation-guide/).
+[Please continue to the installation guide](/installation-guide/).
 
 ### Shared webhosting
 
@@ -30,4 +30,4 @@ that's it. For those people, I recommend installing a tool called
 Then, installing Firefly is something you do inside a Linux virtual machine. When you're done, you
 upload the result to your shared webhosting.
 
-[Please continue to the installation guide](../installation-guide/).
+[Please continue to the installation guide](/installation-guide/).
