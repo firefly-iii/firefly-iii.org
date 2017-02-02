@@ -57,7 +57,9 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 
 Verify the installation of composer using the following command.
 
-`composer -v`
+```
+composer -v
+```
 
 This concludes the server preparations!
 
@@ -67,7 +69,9 @@ Browse to `/var/www` which is probably the directory where your web server is co
 
 Enter the following command. 
 
-`composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
+```
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist
+```
 
 If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
 
@@ -98,8 +102,10 @@ Field | Meaning
 ### Make sure the web server user has access rights.
 Especially when you install Firefly III using `sudo`, the web server may not have (write) access to the Firefly III directory. To make sure that the webserver can run Firefly, run the following commands:
 
-* `sudo chown -R www-data:www-data /var/www/firefly-iii` (or wherever it is installed)
-* `sudo chmod -R 775 /var/www/firefly-iii/storage` (or wherever it is installed)
+```
+sudo chown -R www-data:www-data /var/www/firefly-iii
+sudo chmod -R 775 /var/www/firefly-iii/storage
+```
 
 Now you should be able to visit [http://localhost/firefly-iii**/public**](http://localhost/firefly-iii/public) and see Firefly.
 
