@@ -29,6 +29,7 @@ But actually, it features:
 - The ability to export data so you can move to another system.
 - The ability to _import_ data so you can move _from_ another system.
 - Organize expenses using tags;
+- 2 factor authentication for extra security;
 - Lots of help text in case you don't get it.
 
 Everything is organised:

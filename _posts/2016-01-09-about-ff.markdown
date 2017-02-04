@@ -28,6 +28,8 @@ If you decide you want to run Firefly III yourself (this is the mandatory next s
 - [The upgrade guide](upgrade-guide/) (if you are already running it);
 - [Some important must-reads](must-reads/) that did not fit on this page
 
+Soon, you can also find Firefly III on the Sandstorm.io app market!
+
 ### Finally...
 
 If you do not like Firefly, or it's broken or it does not work, please send me [an email](mailto:thegrumpydictator@gmail.com) or [open an issue on Github](https://github.com/firefly-iii/firefly-iii/issues/new). I will be happy to help. Please [contact me asap](/reporting-bugs-and-security-issues/) when you find security related issues.
