@@ -70,7 +70,7 @@ Browse to `/var/www` which is probably the directory where your web server is co
 Enter the following command. 
 
 ```
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist --no-suggest
 ```
 
 If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
@@ -98,6 +98,14 @@ Field | Meaning
 `SITE_OWNER` | **Important** Fill in your email address.
 `DEMO_USERNAME` | Leave empty!
 `DEMO_PASSWORD` | Leave empty!
+
+### Initialize the database
+
+This step is very important, because Firefly III needs a database to work with and it will tell you whether or not your configuration is correct. Run the following command:
+
+```
+php artisan migrate:refresh --seed
+```
 
 ### Make sure the web server user has access rights.
 Especially when you install Firefly III using `sudo`, the web server may not have (write) access to the Firefly III directory. To make sure that the webserver can run Firefly, run the following commands:
