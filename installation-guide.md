@@ -43,6 +43,13 @@ Find the line that starts with `<Directory /var/www>`. If you see `/`, keep look
 
 You will see the text `AllowOverride None` right below it. Change it to `AllowOverride All`.
 
+Also run the following commands:
+
+```
+sudo a2enmod rewrite
+sudo service apache2 restart
+```
+
 ### nginx configuration
 
 If you run nginx, the configuration should be fine. You'll just have to search the web on how to run PHP7 in nginx. You can check out [my own nginx configuration](/static/nginx.txt).
