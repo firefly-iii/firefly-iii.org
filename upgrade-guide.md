@@ -28,11 +28,17 @@ Then, run the following commands to finish the upgrade:
   * Answer yes when asked.
 * `php artisan cache:clear`
 * `php artisan firefly:upgrade-database`
+* `cd ..`
 
 To make sure your webserver serves you the new Firefly III:
 
 * `mv firefly-iii firefly-iii-old`
 * `mv firefly-iii-updated firefly-iii`
+
+If you get 500 errors or other problems, you may have to set the correct access rights:
+
+* `sudo chown -R www-data:www-data firefly-iii`
+* `sudo chmod -R 775 firefly-iii/storage`
 
 ## Installed Firefly using Git
 
