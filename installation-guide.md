@@ -71,7 +71,9 @@ composer -v
 This concludes the server preparations!
 
 ## 2. Installing Firefly
+
 ### Main command
+
 Browse to `/var/www` which is probably the directory where your web server is configured to find its files.
 
 Enter the following command. 
