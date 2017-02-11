@@ -17,7 +17,7 @@ Below is a list of most often requested features and their status.
 ### Repeat budget amounts every month automatically
 Once you've set budgets for January, you would want to set them for February as well. And March, and April, etc. etc. Firefly does not support the automated creation of new budget amounts each week/month/year, and it will not support them.
 
-As it turns it's pretty complex to create these entries reliably and consistently. Then, there's the question of updating them, un-setting them, etc etc.
+As it turns it's pretty complex to create these entries reliably and consistently. It turns out this feature introduces more bugs than it solves problems.
 
 ### Improvements to the import-routine
 
@@ -27,6 +27,8 @@ Firefly III allows you to import data from other systems but it is not perfect.
 - This is a bit technical, but currently the import routine cannot handle all information coming from CSV files. It breaks down when there are multiple entries in a CSV-line for the same thing. For example, there is both an IBAN and a name for the opposing account. This is something Firefly can't handle. 
 - The ability to import YNAB will be finished once the above point is fixed. YNAB has very weird CSV files.
 - Firefly III will never be able to automatically import data from (insert your bank here).
+
+Improvements are coming, but the work is slow.
 
 ### Implementing an API
 This is an attractive feature and would put Firefly III in the middle of a whole "eco system" of financial tools that could write to Firefly's database, through some JSON / XML / WebServices frontend. It's an attractive idea but a lot of work so it does not have much priority. 
