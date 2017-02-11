@@ -116,7 +116,7 @@ This step is very important, because Firefly III needs a database to work with a
 php artisan migrate:refresh --seed
 ```
 
-If this command does not work, and it say "could not open input file", do this first:
+If this command does not work, and it says "could not open input file", do this first:
 
 ```
 cd firefly-iii
@@ -143,3 +143,4 @@ You cannot login yet. Click on "Register a new account" and fill in the form.
 
 ### Your first accounts
 You will be logged in automatically. Follow the instructions and you are done!
+
