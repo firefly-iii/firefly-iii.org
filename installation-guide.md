@@ -116,6 +116,12 @@ This step is very important, because Firefly III needs a database to work with a
 php artisan migrate:refresh --seed
 ```
 
+If this command does not work, and it say "could not open input file", do this first:
+
+```
+cd firefly-iii
+```
+
 ### Make sure the web server user has access rights.
 Especially when you install Firefly III using `sudo`, the web server may not have (write) access to the Firefly III directory. To make sure that the webserver can run Firefly, run the following commands:
 
@@ -127,8 +133,10 @@ sudo chmod -R 775 /var/www/firefly-iii/storage
 Now you should be able to visit [http://localhost/firefly-iii**/public**](http://localhost/firefly-iii/public) and see Firefly.
 
 ## 3. Accessing Firefly
+
 ### Browsing to site
-Browsing to the site should be easy. You should see a login screen. If you see empty pages, or "Whoops" errors, open the `.env` file again and change `APP_DEBUG` from `false` to `true`. Also change `APP_LOG_LEVEL` to `debug`. This will give you some insight in what is happening. If you don't know what to do, [open an issue](https://github.com/firefly-iii/firefly-iii/issues/new) and I will help you.
+
+Browsing to the site should be easy. You should see a login screen. If you see empty pages, or "Whoops" errors, open the `.env` file again and change `APP_DEBUG` from `false` to `true`. Also change `APP_LOG_LEVEL` to `debug`. This will give you some insight in what is happening. If you don't know what to do, [open an issue](https://github.com/firefly-iii/firefly-iii/issues) and I will help you.
 
 ### Registering an account
 You cannot login yet. Click on "Register a new account" and fill in the form.
