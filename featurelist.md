@@ -30,6 +30,7 @@ But actually, it features:
 - The ability to _import_ data so you can move _from_ another system.
 - Organize expenses using tags;
 - 2 factor authentication for extra security;
+- Supports any currency you want, including crypto currencies such as Bitcoin.
 - Lots of help text in case you don't get it.
 
 Everything is organised:
@@ -38,6 +39,7 @@ Everything is organised:
 - Easy navigation through your records;
 - Browse back and forth to see previous months or even years;
 - Lots of charts because we all love them;
-- Financial reporting showing you how well you are doing.
+- Financial reporting showing you how well you are doing;
+- Lots of math because we all love it.
 
 There is also a list of [often requested features](/requested-features/).
