@@ -32,3 +32,7 @@ Please read [the page about tags](/tags/)
 ### I have a problem installing or using it!
 
 [Open an issue](https://github.com/firefly-iii/firefly-iii/issues/new) or send [me a message](mailto:thegrumpydictator@gmail.com).
+
+### I get weird Javascript errors
+
+If you have installed the `javascript-common` package, please remove it. It overrides your Apache configuration and breaks Firefly III.
