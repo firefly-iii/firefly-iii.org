@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Installation guide FAQ
+title: Technical questions (FAQ)
 permalink: /installation-guide-faq/
 ---
 
@@ -60,3 +60,8 @@ in firefly-iii/app/Http/Controllers/Controller.php:55
 Solution: You haven't enabled or installed the Internationalization extension.
 
 If you are running FreeBSD, install ``pecl-intl``.
+
+### I get weird Javascript errors
+
+If you have installed the javascript-common package, please remove it. It overrides your Apache configuration and breaks Firefly III.
+
