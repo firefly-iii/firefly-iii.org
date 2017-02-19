@@ -79,7 +79,7 @@ Browse to `/var/www` which is probably the directory where your web server is co
 Enter the following command. 
 
 ```
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist --no-suggest
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist
 ```
 
 If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
