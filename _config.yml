@@ -4,15 +4,9 @@ subtitle: by James Cole
 email: thegrumpydictator@gmail.com
 description: A free and open source financial management tool
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jekyll.app" # the base hostname & protocol for your site
+url: "https://firefly-iii.github.io" # the base hostname & protocol for your site
 author: James Cole
 google_analytics: "UA-58172398-13"
-#street_address: 1234 Somewhere Road
-#city: Nashville
-#state: TN
-#zip_code: 55555
-#country: United States of America
-#phone: (716) 555-5555
 
 # Social settings
 #500px_url:
