@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Installation guide
+alias: /installation-guide/
 ---
 
 ## Introduction
