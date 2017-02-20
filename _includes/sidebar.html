@@ -1,0 +1,110 @@
+<!-- Sidebar -->
+<div id="sidebar">
+    <div class="inner">
+
+        <!-- Search
+          <section id="search" class="alt">
+            <form method="post" action="#">
+              <input type="text" name="query" id="query" placeholder="Search" />
+            </form>
+          </section>
+  -->
+        <!-- Menu -->
+        <nav id="menu">
+            <header class="major">
+                <h2>Menu</h2>
+            </header>
+            <ul>
+                <li><a href="{{ '' | absolute_url }}">Homepage</a></li>
+                <li><a href="#">Firefly III on GitHub</a></li>
+                <!--
+                <li><a href="{{ 'generic.html' | absolute_url }}">Generic</a></li>
+                <li><a href="{{ 'elements.html' | absolute_url }}">Elements</a></li>
+                -->
+                <li>
+                    <span class="opener">About Firefly III</span>
+                    <ul>
+                        <li><a href="{{ 'about-general.html' | absolute_url }}">General introduction</a></li>
+                        <li><a href="{{ 'about-features.html' | absolute_url }}">Features</a></li>
+                        <li><a href="{{ 'about-grand-theory.html' | absolute_url }}">The grand theory</a></li>
+                        <li><a href="{{ 'about-screenshots.html' | absolute_url }}">Screenshots</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Using Firefly III</span>
+                    <ul>
+                        <li><a href="https://firefly-iii.nder.be/">Try Firefly III</a></li>
+                        <li><a href="{{ 'using-installing.html' | absolute_url }}">Installation guide</a></li>
+                        <li><a href="{{ 'using-upgrading.html' | absolute_url }}">Upgrade guide</a></li>
+                        <li><a href="{{ 'using-docker.html' | absolute_url }}">Docker</a></li>
+                        <li><a href="{{ 'using-sandstorm.html' | absolute_url }}">Sandstorm.IO</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">Contributing to Firefly III</span>
+                    <ul>
+                        <li><a href="{{ 'contributing-contributing.html' | absolute_url }}">Contributing</a></li>
+                        <li><a href="https://github.com/firefly-iii/firefly-iii/issues">Submit a bug</a></li>
+                        <li><a href="https://github.com/firefly-iii/firefly-iii/issues">Post a feature request</a></li>
+                        <li><a href="{{ 'contributing-security.html' | absolute_url }}">Security</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="opener">FAQ</span>
+                    <ul>
+                        <li><a href="{{ 'faq-technical.html' | absolute_url }}">About installing and updating</a></li>
+                        <li><a href="{{ 'faq-using.html' | absolute_url }}">About using</a></li>
+                        <li><a href="{{ 'faq-other.html' | absolute_url }}">About other things</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ 'requested-features.html' | absolute_url }}">Often requested features</a></li>
+                <li><a href="{{ 'contact-information.html' | absolute_url }}">Contact information</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section -->
+        <!--
+          <section>
+            <header class="major">
+              <h2>Ante interdum</h2>
+            </header>
+            <div class="mini-posts">
+              <article>
+                <a href="#" class="image"><img src="assets/images/pic07.jpg" alt="" /></a>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+              </article>
+              <article>
+                <a href="#" class="image"><img src="assets/images/pic08.jpg" alt="" /></a>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+              </article>
+              <article>
+                <a href="#" class="image"><img src="assets/images/pic09.jpg" alt="" /></a>
+                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">More</a></li>
+            </ul>
+          </section>
+  -->
+        <!-- Section -->
+        <section>
+            <header class="major">
+                <h2>Get in touch</h2>
+            </header>
+            <ul class="contact">
+                <li class="fa-envelope-o"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                <li class="fa-home"><a href="https://github.com/firefly-iii/firefly-iii">Firefly III on GitHub</a></li>
+                <li class="fa-paypal"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44UKUT455HUFA">Feel free to buy me a drink
+                    ;-)</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; {{ site.title }}. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration: <a
+                    href="https://andrewbanchi.ch">Andrew Banchich</a>.</p>
+        </footer>
+
+    </div>
+</div>
