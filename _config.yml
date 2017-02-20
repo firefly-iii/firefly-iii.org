@@ -8,7 +8,12 @@ url: "https://firefly-iii.github.io" # the base hostname & protocol for your sit
 author: James Cole
 google_analytics: "UA-58172398-13"
 
-safe: false
+gems:
+  - jekyll-redirect-from
+
+
+whitelist:
+  - jekyll-redirect-from
 
 # Social settings
 #500px_url:

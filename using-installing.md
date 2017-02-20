@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Installation guide
-alias: /installation-guide/
+redirect_from:
+  - /installation-guide/
 ---
 
 ## Introduction
