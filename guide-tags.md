@@ -27,7 +27,7 @@ Another example would be that you pay something at your job in advance, for exam
 2. Then, connect the expense to this tag using the "create withdrawal"-form.
 3. Every deposit that you create for when one of your friends pays you back is also connected to this tag.
 
-The end result is a tag which shows you all transactions nicely organised.
+The end result is a tag which shows you all transactions nicely organised. Note that advance payment tags only accept a single withdrawal, and multiple deposits.
 
 ### Balancing money
 
