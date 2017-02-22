@@ -15,7 +15,7 @@ layout: default
 				<p>
 				Featuring a double-entry bookkeeping system, with a completely customizable rule-engine. You can
 				quickly enter and organize your transactions in multiple currencies. 
-				<a href="#">Read more</a>
+				<a href="{{ 'about-features.html' | absolute_url }}">Read more</a>
 				</p>
 			</div>
 		</article>
@@ -34,7 +34,7 @@ layout: default
 				<h3>Reports in many flavours</h3>
 				<p>
 				Quickly notice trends and be proud of what your net worth has become with a set of reports that no Excel-guru could
-				dream to match!
+				dream to match! <a href="{{ 'guide-reports.html' | absolute_url }}">Read more</a>
 				</p>
 			</div>
 		</article>

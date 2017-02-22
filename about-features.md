@@ -3,6 +3,9 @@ layout: page
 title: Features
 ---
 
+Firefly III has a lot of fancy features. Some you may discover over time. Others you run into immediately. The list below
+is a comprehensive but far from complete list of all the features in Firefly III.
+
 Most importantly..
 
 - Firefly can import any CSV file, so migrating from other systems is easy.
