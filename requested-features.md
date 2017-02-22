@@ -2,6 +2,8 @@
 layout: page
 title: Often requested features
 show: yes
+redirect_from:
+  - /requested-features/
 ---
 
 Often people ask for features they wish Firefly III to have. 
