@@ -43,26 +43,36 @@ If you get 500 errors or other problems, you may have to set the correct access 
 
 ## Installed Firefly using Git
 
-* Go to the `firefly-iii` folder.
-* Run `git pull`
-* Run `rm -rf bootstrap/cache/*`
-* Run `php artisan migrate --env=production`
+_Backup your entire installation directory, and database first._
+
+Go to the `firefly-iii` folder and run these commands:
+
+* `git pull`
+* `rm -rf bootstrap/cache/*`
+* `rm -rf bootstrap/cache/*`
+* `rm -rf vendor/`
+* `php artisan migrate --env=production`
   * Answer yes when asked.
-* Run `php artisan cache:clear`
-* Run `php artisan firefly:upgrade-database`
+* `php artisan cache:clear`
+* `php artisan firefly:upgrade-database`
 
 ## Installed Firefly using Git (alternative)
 
-* Go to the `firefly-iii` folder.
-* Run `git pull`
-* Run `rm -rf bootstrap/cache/*`
-* Run `rm -rf vendor/`
-* Run `composer install --no-scripts --no-dev`
-* Run `composer install --no-dev`
-* Run `php artisan migrate --env=production`
+_Backup your entire installation directory, and database first._
+
+Use this set of commands when the previous Git method fails for any reason.
+
+Go to the `firefly-iii` folder and run these commands.
+
+* `git pull`
+* `rm -rf bootstrap/cache/*`
+* `rm -rf vendor/`
+* `composer install --no-scripts --no-dev`
+* `composer install --no-dev`
+* `php artisan migrate --env=production`
   * Answer yes when asked.
-* Run `php artisan cache:clear`
-* Run `php artisan firefly:upgrade-database`
+* `php artisan cache:clear`
+* `php artisan firefly:upgrade-database`
 
 
 ## Common upgrade problems
