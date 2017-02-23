@@ -26,13 +26,13 @@ When you create a transaction with the following properties, it will match to th
 
 The match will be visible in your transaction lists:
 
-![Match of bill](https://i.nder.be/gp5upw7s/400/w)
+![Match of bill](https://i.nder.be/gp5upw7s/600/w)
 
 The front page of Firefly III will also start showing the bills:
 
-![Example of bills](https://i.nder.be/hd5r6uvb/400/w)
+![Example of bills](https://i.nder.be/hd5r6uvb/600/w)
 
 Individual bills will end up looking like this picture (under Money Management, then Bills)
 
-![Example of bill](https://i.nder.be/cz8fws8m/400/w)
+![Example of bill](https://i.nder.be/cz8fws8m/600/w)
 
