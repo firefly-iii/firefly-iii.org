@@ -24,11 +24,15 @@ When you create a transaction with the following properties, it will match to th
 * Expense account: "Land lord"
 * Description: "Rent"
 
-If you do this with a number of bills your installation of Firefly will show a chart similar to this one:
+The match will be visible in your transaction lists:
 
-![Example of bills](https://i.nder.be/hup3p3zh/400/w)
+![Match of bill](https://i.nder.be/gp5upw7s/400/w)
 
-Individual bills will end up looking like this picture:
+The front page of Firefly III will also start showing the bills:
 
-![Example of bill](https://i.nder.be/hnc93dsc/400/w)
+![Example of bills](https://i.nder.be/hd5r6uvb/400/w)
+
+Individual bills will end up looking like this picture (under Money Management, then Bills)
+
+![Example of bill](https://i.nder.be/cz8fws8m/400/w)
 
