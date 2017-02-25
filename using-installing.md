@@ -24,7 +24,6 @@ You also need an email address and the associated password and server settings. 
 Install the following PHP modules:
 
 * PHP BCMath Arbitrary Precision Mathematics
-* PHP Mcrypt
 * PHP Internationalization extension
 * PHP MBstring
 * PHP Curl
