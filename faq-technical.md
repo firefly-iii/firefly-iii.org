@@ -70,3 +70,10 @@ If you are running FreeBSD, install ``pecl-intl``.
 
 If you have installed the javascript-common package, please remove it. It overrides your Apache configuration and breaks Firefly III.
 
+### Error: Call to undefined function ctype_alpha()
+
+This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
+
+```
+pkg install php70-ctype
+```

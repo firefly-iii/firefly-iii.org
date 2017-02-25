@@ -27,6 +27,7 @@ Install the following PHP modules:
 * PHP Internationalization extension
 * PHP MBstring
 * PHP Curl
+* PHP Zip
 
 You can search the web to find out how to install these modules. Some may be installed already.
 
