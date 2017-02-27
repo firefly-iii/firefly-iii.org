@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Docker
+redirect_from:
+  - /installation-guide-docker/
 ---
 Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://github.com/elohmeier), [@patrickkostjens](https://github.com/patrickkostjens) and [@crash7](https://github.com/crash7) have gracefully created a Dockerfile, which is included automatically with your Firefly III download.
 
