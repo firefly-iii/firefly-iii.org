@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Features
+redirect_from:
+  - /about-ff/features/
 ---
 
 Firefly III has a lot of fancy features. Some you may discover over time. Others you run into immediately. The list below
