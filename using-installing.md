@@ -3,6 +3,9 @@ layout: page
 title: Installation guide
 redirect_from:
   - /installation-guide/
+  - /server-prep-ubu-16/
+  - /server-prep-ubu-14/
+  - /server-prep-centos/
 ---
 
 ## Introduction
