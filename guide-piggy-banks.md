@@ -2,6 +2,8 @@
 layout: page
 title: About piggy banks
 show: yes
+redirect_from:
+  - /piggy-banks/
 ---
 
 If you want to buy something expensive, you might need to save for it. Use piggy banks to save money.
