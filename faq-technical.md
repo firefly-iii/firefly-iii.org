@@ -77,3 +77,11 @@ This may happen when you are on a NAS4free Debian installation or similar platfo
 ```
 pkg install php70-ctype
 ```
+
+### Error: could not open input file artisan
+
+Make sure you run the artisan commands in the `firefly-iii` directory.
+
+### Error: call to undefined function numfmt_create()
+
+Make sure you have installed and enabled the PHP intl extension.
