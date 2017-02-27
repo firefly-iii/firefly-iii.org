@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Screenshots
+redirect_from:
+  - /about-ff/screenshots/
 ---
 
 
