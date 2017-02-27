@@ -2,6 +2,8 @@
 layout: page
 title: About accounts
 show: yes
+redirect_from:
+  - /accounts/
 ---
 
 Firefly has several types of accounts. This goes beyond your own bank accounts and credit cards; there's more to finance than those two. There are three kinds of accounts in Firefly III.
