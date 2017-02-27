@@ -2,6 +2,8 @@
 layout: page
 title: About budgets
 show: yes
+redirect_from:
+  - /budgets/
 ---
 
 Once you start creating [transactions]({{ 'guide-transactions.html' | absolute_url }}) you start to realise that in a month, the same kind of stuff always comes back. For example:
