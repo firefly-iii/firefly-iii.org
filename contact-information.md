@@ -4,7 +4,7 @@ title: Contact information
 show: yes
 ---
 
-As mentioned on several pages, you can contact me through email on [thegrumpydictator@gmail.com](thegrumpydictator@gmail.com).
+As mentioned on several pages, you can contact me through email on [mailto:thegrumpydictator@gmail.com](thegrumpydictator@gmail.com).
 
 My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `90F5 46F1 3B81 B67A 1BAA 5DDD C169 61E6 55E7 4B5E`. You
 can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
