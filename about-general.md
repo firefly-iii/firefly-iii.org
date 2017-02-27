@@ -4,6 +4,7 @@ title: General introduction
 redirect_from:
   - /about-ff/description/
   - /about-ff/try-firefly-iii/
+  - /about-ff/must-reads/
 ---
 
 "Firefly III" is a financial manager. It can help you keep track of expenses, income, budgets and everything in between. It even supports credit cards, shared  household accounts and savings accounts! It's pretty fancy. You should use it to save and organise money.
