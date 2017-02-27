@@ -2,6 +2,8 @@
 layout: page
 title: About reports
 show: yes
+redirect_from:
+  - /reports/
 ---
 
 Firefly can generate fancy reports that give you a visual impression on how your finances are doing. Each report can be generated for a custom period _and_ for a specific selection of accounts, budgets and/or categories (whatever applies). Each report is generated on-the-fly and you can easily bookmark reports.
