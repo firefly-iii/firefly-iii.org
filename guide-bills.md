@@ -2,6 +2,8 @@
 layout: page
 title: About bills
 show: yes
+redirect_from:
+  - /bills/
 ---
 
 Many [withdrawals]({{ 'guide-categories.html' | absolute_url }}) come back every month. Firefly III supports the creation of so-called "Bills" which can help you keep track of which bills to expect. For example your rent, water- or Netflix bills.
