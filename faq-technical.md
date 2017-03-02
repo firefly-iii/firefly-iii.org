@@ -3,6 +3,7 @@ layout: page
 title: FAQ about installing and updating
 redirect_from:
   - /installation-guide-faq/
+  - /faq/
 ---
 
 ### Can I use it on PHP 5.x?
