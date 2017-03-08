@@ -12,7 +12,7 @@ The instructions below should help you set this up. Please realize that Docker i
 
 Run this command:
 
-`docker-compose up -f docker-compose.yml -f docker-compose.prod.yml up`
+`docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
 
 Then run the "init-database" task (see the tasks below).
 
