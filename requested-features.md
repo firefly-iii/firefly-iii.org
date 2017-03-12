@@ -14,8 +14,19 @@ If it has too few, it will feel childish and simple.
 
 Below is a list of most often requested features and their status.
 
+## Can you allow me to create recurring transactions?
+Firefly III will not feature the ability to automatically create new transactions, such as monthly bills, salary deposits or transfers.
+
+Altough I see the convenience of having these transactions created for you, that's not the point of this tool. I believe that if you are serious about changing your financial habits, you should be aware of what happens on your accounts. The money you spend and the money you earn. By entering each transaction manually, you will _feel_ what you spend.
+
+Of course, there are shortcuts. You can import transactions from your online bank account and you can clone transactions so all the fields are pre-filled. But that's it. 
+
+## Can you help me predict the future?
+
+All I can predict is that for the foreseeable future, Firefly III will not have tools to extrapolate the future from your current records.
 
 ## The ability to automatically set the budget amounts
+
 Once you've set budgets for January, you would want to set them for February as well. And March, and April, etc. etc. Firefly does not support the automated creation of new budget amounts each week/month/year, and it will not support them.
 
 As it turns it's pretty complex to create these entries reliably and consistently. It turns out this feature introduces more bugs than it solves problems.
@@ -63,11 +74,3 @@ Although this would not bloat Firefly III too much, it is a lot of work and will
 ## I wish to run my business using this tool
 
 Although there are some data-fields that can be used for business expenses, Firefly III will never move its focus from personal finance to business finance.
-
-## Predicting or planning the future
-
-Extrapolating the future from your current financial records is something Firefly III will not support. Firefly will also not support the automated
-generation of transactions (like recurring bills).
-
-I believe that if you are serious about changing your financial habits, you should be aware of what happens on your accounts. The money you spend and the
-money you earn. By entering each transaction manually, you will _feel_ what you spend. 
