@@ -17,7 +17,7 @@ Below is a list of most often requested features and their status.
 ## Can you allow me to create recurring transactions?
 Firefly III will not feature the ability to automatically create new transactions, such as monthly bills, salary deposits or transfers.
 
-Altough I see the convenience of having these transactions created for you, that's not the point of this tool. I believe that if you are serious about changing your financial habits, you should be aware of what happens on your accounts. The money you spend and the money you earn. By entering each transaction manually, you will _feel_ what you spend.
+Although I see the convenience of having these transactions created for you, that's not the point of this tool. I believe that if you are serious about changing your financial habits, you should be aware of what happens on your accounts. The money you spend and the money you earn. By entering each transaction manually, you will _feel_ what you spend.
 
 Of course, there are shortcuts. You can import transactions from your online bank account and you can clone transactions so all the fields are pre-filled. But that's it. 
 
