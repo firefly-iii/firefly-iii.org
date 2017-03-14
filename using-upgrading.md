@@ -3,6 +3,7 @@ layout: page
 title: Upgrade guide
 redirect_from:
   - /about-ff/upgrade-guide/
+  - /upgrade-guide/
 ---
 
 Firefly III has had a long and stormy history. There are two ways of installing Firefly III, so there are two ways to upgrade:
