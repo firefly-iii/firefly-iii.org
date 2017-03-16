@@ -2,6 +2,8 @@
 layout: page
 title: About transactions
 show: yes
+redirect_from:
+  - /transactions/
 ---
 
 A transaction is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: _money moves from A to B_:
