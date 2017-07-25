@@ -14,7 +14,7 @@ layout: default
 				<h3>Full financial management</h3>
 				<p>
 				Featuring a double-entry bookkeeping system, with a completely customizable rule-engine. You can
-				quickly enter and organize your transactions in multiple currencies. 
+				quickly enter and organize your transactions in multiple currencies.
 				<a href="{{ 'about-features.html' | absolute_url }}">Read more</a>
 				</p>
 			</div>

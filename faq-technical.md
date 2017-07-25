@@ -8,7 +8,7 @@ redirect_from:
 
 ### Can I use it on PHP 5.x?
 
-No. Most code has been written specifically for PHP 7.0 and higher.
+No. Most code has been written specifically for PHP 7.1 and higher.
 
 ### Decimal points are missing, numbers are off, stuff like that
 
@@ -40,7 +40,7 @@ PHP Parse error:  syntax error, unexpected '?' in
 app/Support/Twig/General.php on line 103
 ```
 
-Firefly III requires PHP 7 or higher.
+Firefly III requires PHP 7.1 or higher.
 
 ### BCMath
 
@@ -76,7 +76,7 @@ If you have installed the javascript-common package, please remove it. It overri
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
 ```
-pkg install php70-ctype
+pkg install php71-ctype
 ```
 
 ### Error: could not open input file artisan

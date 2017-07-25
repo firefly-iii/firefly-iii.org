@@ -15,10 +15,10 @@ This guide focuses on the installation of [Firefly III](https://github.com/firef
 Check out [the FAQ]({{ 'faq-technical.html' | absolute_url }}) when things are not working.
 
 ### Prerequisites
-You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.0. There are many tutorials that will help you install one. For example:
+You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
 
 1. [A guide to install a LAMP stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
-2. [A guide to update to PHP 7.0](https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7)
+2. [A guide to update to PHP 7.1](https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7)
 
 You also need an email address and the associated password and server settings. You can safely use your own email address. If you prefer not to, you can register a free email account at [GMail](https://accounts.google.com/SignUp?service=mail) or [Outlook](https://outlook.live.com/owa/)
 
@@ -53,7 +53,7 @@ sudo service apache2 restart
 
 #### nginx configuration
 
-If you run nginx, the configuration should be fine. You'll just have to search the web on how to run PHP7 in nginx. You can check out [my own nginx configuration](/static/nginx.txt).
+If you run nginx, the configuration should be fine. You'll just have to search the web on how to run PHP7.1 in nginx. You can check out [my own nginx configuration](/static/nginx.txt).
 
 #### Installing composer
 

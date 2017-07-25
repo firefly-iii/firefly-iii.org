@@ -6,7 +6,7 @@ show: yes
 
 ### So what is this thing really?
 
-Firefly III is a web application written in PHP 7.0 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the [full description](/description/).
+Firefly III is a web application written in PHP 7.1 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the [full description](/description/).
 
 ### How can I use it?
 
