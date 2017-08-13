@@ -61,25 +61,6 @@ Go to the `firefly-iii` folder and run these commands:
 * `php artisan cache:clear`
 * `php artisan firefly:upgrade-database`
 
-## Installed Firefly using Git (alternative)
-
-_Backup your entire installation directory, and database first._
-
-Use this set of commands when the previous Git method fails for any reason.
-
-Go to the `firefly-iii` folder and run these commands.
-
-* `git pull`
-* `rm -rf bootstrap/cache/*`
-* `rm -rf vendor/`
-* `composer install --no-scripts --no-dev`
-* `composer install --no-dev`
-* `php artisan migrate --env=production`
-  * Answer yes when asked.
-* `php artisan cache:clear`
-* `php artisan firefly:upgrade-database`
-
-
 ## Common upgrade problems
 
 ### Upgrading from a very old version
