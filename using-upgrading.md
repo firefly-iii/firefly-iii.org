@@ -70,7 +70,7 @@ When you have used Firefly for a long time you will find it can be difficult to 
 * Renamed `firefly-iii` directory to `firefly-iii-3.7`
 * Renamed `firefly` DB to `firefly_3.7`
 * Created new DB named `firefly` (with same user)
-* Run `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist`
+* Run `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.4`
 * Merged `firefly-iii-3.7/.env` into `firefly-iii/.env`
 * Run `php artisan migrate --seed --env=production`
 * Using phpMyAdmin, exported new firefly DB structure only and used the SQL file in an editor as a reference
