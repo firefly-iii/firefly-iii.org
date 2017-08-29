@@ -14,7 +14,7 @@ When something doesn't work, please check [the FAQ]({{ 'faq-technical.html' | ab
 
 The best way to upgrade is to "reinstall" Firefly III using the following command:
 
-* `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated 4.6.*`
+* `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated 4.6.4`
 
 This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your _original_ Firefly III installation is in the directory `firefly-iii` you can upgrade by simply moving over your `.env` file and other stuff:
 
