@@ -4,7 +4,7 @@ title: Docker
 redirect_from:
   - /installation-guide-docker/
 ---
-Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://github.com/elohmeier), [@patrickkostjens](https://github.com/patrickkostjens), [@crash7](https://github.com/crash7) and  have gracefully created a Dockerfile, which is included automatically with your Firefly III download.
+Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://github.com/elohmeier), [@patrickkostjens](https://github.com/patrickkostjens), [@crash7](https://github.com/crash7) and [@jleeong](https://github.com/jleeong) have gracefully created a Dockerfile, which is included automatically with your Firefly III download.
 
 The instructions below should help you set this up. Please realize that Docker is pretty advanced stuff.
 
