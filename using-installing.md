@@ -103,7 +103,7 @@ Field | Meaning
 `COOKIE_SECURE` | Only use cookies over https (off by default)
 `MAIL_*` | Update this to reflect your email settings.
 `SHOW_INCOMPLETE_TRANSLATIONS` | Set this to true if you want to use incomplete translations.
-`GOOGLE_MAPS_API_KEY` | You _may_ fill this in if you expect your Firefly III installation to contain and show over 10.000 tags.
+`GOOGLE_MAPS_API_KEY` | You [need to fill this in](https://developers.google.com/maps/documentation/javascript/get-api-key) to be able to set the location for tags.
 `ANALYTICS_ID` | If you want to see analytics for your own Firefly III installation
 `SITE_OWNER` | **Important** Fill in your email address.
 `DEMO_USERNAME` | Leave empty!
