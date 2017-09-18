@@ -6,16 +6,12 @@ redirect_from:
   - /requested-features/
 ---
 
-Often people ask for features they wish Firefly III to have. 
-
-New features are always a trade-off. If Firefly III has too many features it will feel bloated and complex.
-
-If it has too few, it will feel childish and simple. 
+Often people ask for features they wish Firefly III to have. New features are always a bit of a trade-off. If Firefly III has too many features it will feel bloated and complex. But if it has too few, it will feel childish and simple. 
 
 Below is a list of most often requested features and their status.
 
 ## Can you allow me to create recurring transactions?
-Firefly III will not feature the ability to automatically create new transactions, such as monthly bills, salary deposits or transfers.
+Unfortunately, Firefly III will not feature the ability to automatically create new transactions, such as monthly bills, salary deposits or transfers.
 
 Although I see the convenience of having these transactions created for you, that's not the point of this tool. I believe that if you are serious about changing your financial habits, you should be aware of what happens on your accounts. The money you spend and the money you earn. By entering each transaction manually, you will _feel_ what you spend.
 
@@ -23,7 +19,7 @@ Of course, there are shortcuts. You can import transactions from your online ban
 
 ## Can you help me predict the future?
 
-All I can predict is that for the foreseeable future, Firefly III will not have tools to extrapolate the future from your current records.
+Firefly III will probably not get tools to extrapolate the future from your current records. It's very tricky work and it quickly becomes "advanced guesswork".
 
 ## The ability to automatically set the budget amounts
 
@@ -33,12 +29,15 @@ As it turns it's pretty complex to create these entries reliably and consistentl
 
 ## Often requested import-routine features
 
-Firefly III allows you to import data from other systems but it is not perfect.
+Firefly III allows you to import data from other systems but it is not perfect yet.
 
 - Firefly III can only import CSV files. No MT940, HBCI, FinTS, or other formats are currently supported. No other formats will be supported until it is clear what the [PSD2](https://en.wikipedia.org/wiki/Payment_Services_Directive#Revised_Directive_on_Payment_Services_.28PSD2.29) will mean for financial institutions.
-- This is a bit technical, but currently the import routine cannot handle all information coming from CSV files. It breaks down when there are multiple entries in a CSV-line for the same thing. For example, there is both an IBAN and a name for the opposing account. This is something Firefly can't handle. 
-- The ability to import YNAB will be finished once the above point is fixed. YNAB has very weird CSV files.
-- Firefly III will never be able to automatically import data from (insert your bank here).
+
+In the future, Firefly III will be able to:
+
+- Import from banks that provide a solid API
+- Import YNAB files
+- Import other file types.
 
 Improvements are coming, but the work is slow.
 
@@ -69,8 +68,11 @@ Then, when the user wants to share data with another user, this other user is si
 But such a change, at this point, would effectively mean that the tool needs to be rebuilt from scratch. And that's something that I cannot do.
 
 ## Exporting data to the MT940 format
-Although this would not bloat Firefly III too much, it is a lot of work and will probably never happen.
+Not at the moment, no. 
 
 ## I wish to run my business using this tool
-
 Although there are some data-fields that can be used for business expenses, Firefly III will never move its focus from personal finance to business finance.
+
+## I wish to track stock portfolios using Firefly
+Same answer, unfortunately.
+
