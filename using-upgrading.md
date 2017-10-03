@@ -32,6 +32,7 @@ Then, run the following commands to finish the upgrade:
   * Answer yes when asked.
 * `php artisan cache:clear`
 * `php artisan firefly:upgrade-database`
+* `php artisan firefly:verify`
 * `cd ..`
 
 To make sure your webserver serves you the new Firefly III:
@@ -68,6 +69,7 @@ Go to the `firefly-iii` folder and run these commands:
   * Answer yes when asked.
 * `php artisan cache:clear`
 * `php artisan firefly:upgrade-database`
+* `php artisan firefly:verify`
 
 ## Common upgrade problems
 
@@ -89,6 +91,7 @@ When you have used Firefly for a long time you will find it can be difficult to 
 * Copied `firefly_3.7` DB to a new `firefly` (so now we are using the original DB with 4.3 structure updates)
 * Run `php artisan cache:clear`
 * Run `php artisan firefly:upgrade-database` (this did something to the entries in budget_limits table)
+* Run `php artisan firefly:verify`
 * Navigated in the browser to the site.
 
 ### The database stores no more than 4 decimals
