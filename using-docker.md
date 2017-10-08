@@ -39,7 +39,11 @@ Run the following command:
 
 #### init-database
 
-Run the following command:
+Run the following commands:
 
-`docker-compose exec firefly-app php artisan migrate --seed`
+```
+docker-compose exec firefly-app php artisan migrate --seed
+docker-compose exec firefly-app php artisan firefly:upgrade-database
+docker-compose exec firefly-app php artisan firefly:verify
+```
 
