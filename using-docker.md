@@ -4,7 +4,7 @@ title: Docker
 redirect_from:
   - /installation-guide-docker/
 ---
-Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://github.com/elohmeier), [@patrickkostjens](https://github.com/patrickkostjens), [@crash7](https://github.com/crash7) and [@jleeong](https://github.com/jleeong) have gracefully created a Dockerfile, which is included automatically with your Firefly III download.
+Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://github.com/elohmeier), [@patrickkostjens](https://github.com/patrickkostjens), [@crash7](https://github.com/crash7), [@jleeong](https://github.com/jleeong) and various others have gracefully contributed to a Dockerfile, which is included automatically with your Firefly III download.
 
 The instructions below should help you set this up. Please realize that Docker is pretty advanced stuff.
 
@@ -15,8 +15,6 @@ Run this command:
 `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
 
 Then run the "init-database" task (see the tasks below).
-
-
 
 ### For development
 
@@ -46,4 +44,3 @@ docker-compose exec firefly-app php artisan migrate --seed
 docker-compose exec firefly-app php artisan firefly:upgrade-database
 docker-compose exec firefly-app php artisan firefly:verify
 ```
-
