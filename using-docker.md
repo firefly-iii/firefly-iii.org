@@ -8,6 +8,14 @@ Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://
 
 The instructions below should help you set this up. Please realize that Docker is pretty advanced stuff.
 
+### Docker hub
+
+You can use this pull command to pull the official image:
+
+```
+docker pull jc5x/firefly-iii
+```
+
 ### For production (this means you)
 
 Run this command:
