@@ -3,8 +3,8 @@ layout: page
 title: Sandstorm.io
 ---
 
-Although currently in beta, Firefly III supports [Sandstorm.io](https://sandstorm.io/).
+Firefly III supports [Sandstorm.io](https://sandstorm.io/).
 
-You can try Firefly III in Sandstorm by going to your Firefly III directory and running `vagrant-spk dev`.
+You can find Firefly III in Sandstorm by going to the [Sandstorm App Market](https://apps.sandstorm.io/app/uws252ya9mep4t77tevn85333xzsgrpgth8q4y1rhknn1hammw70).
 
-This should add the app to your Sandstorm instance in "dev"-mode. Any feedback you may have is welcome!
+Any feedback you may have is welcome!
