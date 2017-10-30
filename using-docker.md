@@ -28,16 +28,47 @@ The instructions below should help you set this up. Please realize that Docker i
 
 6. After the database is initialized you may navigate to your http://dockerhostaddress:9001 or whatever port you chose and firefly-iii will be running.
 
-To update the container just run
+7. To update the container just run
 ```
 docker-compose restart firefly-app
 ```
 
 
 ### Docker Hub With Automatic Updates Via Run/Pull
+1. Use the Run Command below as a template
+2. Modify the following variables.
+ * MYSQL_PASSWORD
+ * FF_DB_PASSWORD
+ * FF_APP_KEY
+3. OPTIONAL: Ports If you would like to specify a diffrent port modify the ports line. Ports are specified in the format of host:container if you want firefly-iii exposed on port 9001 it would be "9001:80" if you would rather it be on 443 it would be "443:80"
+4. Run the modified command now
+5. Proceed to the "init-database" step below if this is your first time running firefly-iii.
+6. After the database is initialized you may navigate to your http://dockerhostaddress:9001 or whatever port you chose and firefly-iii will be running.
+7. To update the container just run
+`docker pull jc5x/firefly-iii`
 
 ```
-To Be Added Soon
+docker run \
+--name=firefly-db \
+-e MYSQL_DATABASE=firefly_db \
+-e MYSQL_USER=firefly_db \
+-e MYSQL_PASSWORD=firefly_db_secret \
+-e MYSQL_RANDOM_ROOT_PASSWORD=yes \
+-v firefly-storage:/var/lib/mysql \
+mysql:8
+
+docker run \
+--name=firefly-app \
+--link=firefly-db \
+-e FF_DB_HOST=firefly-db \
+-e FF_DB_NAME=firefly_db \ 
+-e FF_DB_USER=firefly_db \
+-e FF_DB_PASSWORD=firefly_db_secret \ 
+-e FF_APP_KEY=SomeRandomStringOf32CharsExactly \
+-e FF_APP_ENV=local \ 
+-p 9001:80 \
+-v firefly-app-storage:/var/www/firefly-iii/storage \
+jc5x/firefly-iii
 ```
 
 ### For production
