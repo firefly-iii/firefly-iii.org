@@ -18,7 +18,7 @@ The instructions below should help you set this up. Please realize that Docker i
 3. OPTIONAL: Ports If you would like to specify a diffrent port modify the ports line. Ports are specified in the format of host:container if you want firefly-iii exposed on port `9001` it would be `"9001:80"` if you would rather it be on `443` it would be `"443:80"`
 4. Start up the container `docker-compose -f docker-compose.dockerhub.yaml up -d`
 5. Proceed to the "init-database" step below if this is the first time running firefly-iii.
-6. After the database is initialized you may navigate to firefly-iii using `http://dockerhostaddress:9001` or whatever port you chose and firefly-iii will be running.
+6. After the database is initialized you may navigate to firefly-ii using `http://dockerhostaddress:portyouchose`
 7. To update the container just run `docker-compose restart firefly-app` or add it to chrontab
 
 ### Docker Hub With Automatic Updates Via Run/Pull
@@ -30,9 +30,8 @@ The instructions below should help you set this up. Please realize that Docker i
 3. OPTIONAL: Ports If you would like to specify a diffrent port modify the ports line. Ports are specified in the format of host:container if you want firefly-iii exposed on port `9001` it would be `"9001:80"` if you would rather it be on `443` it would be `"443:80"`
 4. Run the modified command now
 5. Proceed to the "init-database" step below if this is your first time running firefly-iii.
-6. After the database is initialized you may navigate to your `http://dockerhostaddress:9001` or whatever port you chose and firefly-iii will be running.
-7. To update the container just run
-`docker pull jc5x/firefly-iii`
+6. After the database is initialized you may navigate to firefly-ii using `http://dockerhostaddress:portyouchose`
+7. To update the container just run `docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app`
 
 ```
 docker run \
