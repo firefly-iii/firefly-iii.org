@@ -8,15 +8,39 @@ Github users [@schoentoon](https://github.com/schoentoon), [@elohmeier](https://
 
 The instructions below should help you set this up. Please realize that Docker is pretty advanced stuff.
 
-### Docker hub
+### Docker Hub With Automatic Updates Via Docker-Compose
 
-You can use this pull command to pull the official image:
+1. Copy our file located [here](https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.dockerhub.yaml)
+
+2. Modify the following variables.
+ * MYSQL_PASSWORD
+ * FF_DB_PASSWORD
+ * FF_APP_KEY
+
+ `NOTE: MYSQL_PASSWORD and FF_DB_PASSWORD need to be identical.`
+
+3. OPTIONAL: Ports If you would like to specify a diffrent port modify the ports line. Ports are specified in the format of host:container if you want firefly-iii exposed on port 9001 it would be "9001:80" if you would rather it be on 443 it would be "443:80"
+
+4. Start up the container 
+`docker-compose -f docker-compose.dockerhub.yaml up -d`
+
+5. Proceed to the "init-database" step below if this is the first time running firefly-iii.
+
+6. After the database is initialized you may navigate to your http://dockerhostaddress:9001 or whatever port you chose and firefly-iii will be running.
+
+To update the container just run
+```
+docker-compose restart firefly-app
+```
+
+
+### Docker Hub With Automatic Updates Via Run/Pull
 
 ```
-docker pull jc5x/firefly-iii
+To Be Added Soon
 ```
 
-### For production (this means you)
+### For production
 
 Run this command:
 
