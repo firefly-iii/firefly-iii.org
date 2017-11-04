@@ -81,7 +81,7 @@ Browse to `/var/www` which is probably the directory where your web server is co
 Enter the following command. 
 
 ```
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.9
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.10
 ```
 
 If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
@@ -110,7 +110,7 @@ Field | Meaning
 `DEMO_USERNAME` | Leave empty!
 `DEMO_PASSWORD` | Leave empty!
 
-Other fields in this file are not 
+Other fields in this file are not relevant now.
 
 #### Initialize the database
 
