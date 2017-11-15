@@ -40,7 +40,7 @@ Then, run the "composer-install" and "init-database" (see the tasks below).
 
 Run the following command:
 
-`docker-compose exec firefly-app composer install`
+`docker-compose exec firefly-app composer install --no-dev`
 
 
 #### init-database
