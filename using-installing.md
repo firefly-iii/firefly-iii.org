@@ -14,13 +14,16 @@ redirect_from:
 This guide focuses on the installation of [Firefly III](https://github.com/firefly-iii/firefly-iii) only. The guide is just three steps!
 Check out [the FAQ]({{ 'faq-technical.html' | absolute_url }}) when things are not working.
 
+You can also use [Docker]({{ 'using-docker.html' | absolute_url }}) or [Sandstorm]({{ 'using-sandstorm.html' | absolute_url }}) to use Firefly III.
+
 ### Prerequisites
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
 
 1. [A guide to install a LAMP stack](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu)
 2. [A guide to update to PHP 7.1](https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7)
+3. [A guide to install PHP7.1 on a Raspberry Pi](https://raspberrypi.stackexchange.com/questions/70388/how-to-install-php-7-1)
 
-You also need an email address and the associated password and server settings. You can safely use your own email address. If you prefer not to, you can register a free email account at [GMail](https://accounts.google.com/SignUp?service=mail) or [Outlook](https://outlook.live.com/owa/)
+You also need an email address and the associated password and server settings. You can safely use your own email address. If you prefer not to, you can register a free email account at [GMail](https://accounts.google.com/SignUp?service=mail) or [Outlook](https://outlook.live.com/owa/).
 
 ### 1. Preparing your server
 
@@ -37,7 +40,7 @@ Install the following PHP modules:
 
 You can search the web to find out how to install these modules. Some may be installed already.
 
-#### Apache configuration
+#### Optional: Apache configuration
 
 If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file (its location differs, but it is probably in `/etc/apache2`).
 
@@ -52,7 +55,7 @@ sudo a2enmod rewrite
 sudo service apache2 restart
 ```
 
-#### nginx configuration
+#### Optional: nginx configuration
 
 If you run nginx, the configuration should be fine. You'll just have to search the web on how to run PHP7.1 in nginx. You can check out [my own nginx configuration](/static/nginx.txt).
 
@@ -70,6 +73,10 @@ Verify the installation of composer using the following command.
 composer -v
 ```
 
+##### Composer without sudo
+
+If you have no sudo rights, you can simply download composer [here](https://getcomposer.org/download/). See the header "manual download".
+
 This concludes the server preparations!
 
 ### 2. Installing Firefly
@@ -81,7 +88,7 @@ Browse to `/var/www` which is probably the directory where your web server is co
 Enter the following command. 
 
 ```
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.9
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.10
 ```
 
 If this gives an error because of access rights, prepend the command with `sudo `. We'll fix the access rights later. The output of this command must look something like [this example](/static/installation-output.txt).
@@ -104,17 +111,15 @@ Field | Meaning
 `COOKIE_SECURE` | Only use cookies over https (off by default)
 `MAIL_*` | Update this to reflect your email settings.
 `SHOW_INCOMPLETE_TRANSLATIONS` | Set this to true if you want to use incomplete translations.
-`GOOGLE_MAPS_API_KEY` | You [need to fill this in](https://developers.google.com/maps/documentation/javascript/get-api-key) to be able to set the location for tags.
+`MAPBOX_API_KEY` | You [need to fill this in](https://www.mapbox.com/signup/) to be able to set the location for tags.
 `ANALYTICS_ID` | If you want to see analytics for your own Firefly III installation
 `SITE_OWNER` | **Important** Fill in your email address.
-`DEMO_USERNAME` | Leave empty!
-`DEMO_PASSWORD` | Leave empty!
 
-Other fields in this file are not 
+Other fields in this file are not relevant now for the installation, but you can tweak them later.
 
 #### Initialize the database
 
-This step is very important, because Firefly III needs a database to work with and it will tell you whether or not your configuration is correct. Run the following command:
+This step is very important, because Firefly III needs a database to work with and it will tell you whether or not your configuration is correct. Run the following command in the Firefly III directory.
 
 ```
 php artisan migrate:refresh --seed
