@@ -14,7 +14,7 @@ When something doesn't work, please check [the FAQ]({{ 'faq-technical.html' | ab
 
 The best way to upgrade is to "reinstall" Firefly III using the following command:
 
-* `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated 4.6.10`
+* `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated 4.6.11`
 
 This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your _original_ Firefly III installation is in the directory `firefly-iii` you can upgrade by simply moving over your `.env` file and other stuff:
 
@@ -80,7 +80,7 @@ When you have used Firefly for a long time you will find it can be difficult to 
 * Renamed `firefly-iii` directory to `firefly-iii-3.7`
 * Renamed `firefly` DB to `firefly_3.7`
 * Created new DB named `firefly` (with same user)
-* Run `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.10`
+* Run `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii 4.6.11`
 * Merged `firefly-iii-3.7/.env` into `firefly-iii/.env`
 * Run `php artisan migrate --seed --env=production`
 * Using phpMyAdmin, exported new firefly DB structure only and used the SQL file in an editor as a reference
