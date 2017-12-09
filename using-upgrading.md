@@ -61,7 +61,6 @@ Go to the `firefly-iii` folder and run these commands:
 
 * `git pull`
 * `rm -rf bootstrap/cache/*`
-* `rm -rf bootstrap/cache/*`
 * `rm -rf vendor/`
 * `composer install --no-scripts --no-dev`
 * `composer install --no-dev`

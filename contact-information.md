@@ -31,6 +31,7 @@ Firefly III uses the following libraries and tools:
 * Alternative icon has been made by [Freepik](http://www.freepik.com).
 * The cute piggy is by [Fabian Blank](https://unsplash.com/collections/388522/money-revenue).
 * Various other open source components (see [composer.json](https://github.com/firefly-iii/firefly-iii/blob/master/composer.json))
+* CSV file icon made by [Smashicons](https://www.flaticon.com/authors/smashicons).
 
 ## Current state
 
