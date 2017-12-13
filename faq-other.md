@@ -14,7 +14,7 @@ You must install it yourself on webhosting of your choice, or on a webserver you
 
 ### Can I try it first?
 
-[Yes, you can!](https://firefly-iii.nder.be/)
+[Yes, you can!](https://demo.firefly-iii.org/)
 
 ### I have found a security related issue
 

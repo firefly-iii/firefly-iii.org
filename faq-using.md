@@ -6,11 +6,7 @@ show: yes
 
 ### Can I try it first?
 
-[Yes, you can!](https://firefly-iii.nder.be/)
-
-### How do I use the "balancing act"-tag?
-
-Please read [the page about tags](/tags/)
+[Yes, you can!](https://demo.firefly-iii.org/)
 
 ### How can I use it? I don't get it
 

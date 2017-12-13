@@ -19,7 +19,7 @@ Of course, to get to know Firefly III first, and to see if it fits you, please c
 - The [screenshots]({{ 'about-screenshots.html' | absolute_url }}) so you can see what it looks like;
 - The [feature list]({{ 'about-features.html' | absolute_url }}) so you know what it does;
 - The [grand theory]({{ 'about-grand-theory.html' | absolute_url }}), which will tell you how Firefly works, and the philosophy behind it;
-- The [demo site](https://firefly-iii.nder.be/) so you can see what it's like.
+- The [demo site](https://demo.firefly-iii.org/) so you can see what it's like.
 
 ### Then what?
 

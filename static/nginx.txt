@@ -1,9 +1,9 @@
 server {
 	listen 80; 
-	root /var/websites/firefly-iii.nder.be/demo-site/public;
+	root /var/websites/demo.firefly-iii.org/demo-site/public;
 	index index.php;
 
-	server_name firefly-iii.nder.be;
+	server_name demo.firefly-iii.org;
 
 	location / {
 		try_files $uri $uri/ /index.php$is_args$args;
