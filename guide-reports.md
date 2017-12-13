@@ -46,6 +46,12 @@ it can also be used to see if that raise you have received actually amounted to 
 
 [![Audit](https://i.nder.be/h9f93bxv/300/w)](https://i.nder.be/h9f93bxv)
 
+## Tag report
+This report is the same as the reports above but focuses on your tags.
+
+## Expense/revenue account report
+This report focuses on expense and revenue accounts with the same name. Often mentioned examples include your local tax services which may take money from your AND pay out subsidies and what-not. This report can show you both. The only options you may select are expense/revenue accounts that share the exact same name.
+
 
 <hr>
 ### Special URL fields

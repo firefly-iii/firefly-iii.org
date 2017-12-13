@@ -12,7 +12,7 @@ is a comprehensive but far from complete list of all the features in Firefly III
 Most importantly..
 
 - Firefly can import any CSV file, so migrating from other systems is easy.
-- Firefly runs on your own server, so you are fully in control of your data.
+- Firefly runs on your own server, so you are fully in control of your data. It will not contact other sites or servers.
 - If you feel you're missing something you can just ask me and I'll add it!
 
 But actually, it features:
@@ -45,3 +45,5 @@ Everything is organised:
 - Lots of charts because we all love them;
 - Financial reporting showing you how well you are doing;
 - Lots of math because we all love it.
+
+So in short, Firefly III should have everything you need for proper financial management!

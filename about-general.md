@@ -25,7 +25,7 @@ Of course, to get to know Firefly III first, and to see if it fits you, please c
 
 If you decide you want to run Firefly III yourself (this is the mandatory next step), you should check out the menu under "using Firefly III".
 
-Soon, you can also find Firefly III on the Sandstorm.io app market!
+You can also find Firefly III on the Sandstorm.io app market, and run it using Heroku.
 
 ### Finally...
 
@@ -74,3 +74,7 @@ Will show you how you have been doing. You can select the accounts to be include
 ### <i class="fa fa-random fa-fw"></i> Rules
 
 Firefly III can automatically categorize or budgetize your transactions based on rules you can create yourself. Read all about it on the [page about rules]({{ 'guide-rules.html' | absolute_url }}).
+
+### <i class="fa fa-fw fa-link"></i> Linking transactions
+
+You can link transactions together using monikers such as "A pays for B" or "C reimburses D". This can greatly enhance the level of information in your administration. [Read all about it!]({{ 'guide-links.html' | absolute_url }})

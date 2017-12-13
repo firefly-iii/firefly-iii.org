@@ -86,3 +86,7 @@ Make sure you run the artisan commands in the `firefly-iii` directory.
 ### Error: call to undefined function numfmt_create()
 
 Make sure you have installed and enabled the PHP intl extension.
+
+### I have another question!
+
+Please [open a ticket on Github](https://github.com/firefly-iii/firefly-iii).

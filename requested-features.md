@@ -35,9 +35,11 @@ Firefly III allows you to import data from other systems but it is not perfect y
 
 In the future, Firefly III will be able to:
 
-- Import from banks that provide a solid API
-- Import YNAB files
-- Import other file types.
+- Import from banks that provide a solid API;
+- Import YNAB files;
+- Import other file types;
+- Import from Spectre;
+- Import from Plaid;
 
 Improvements are coming, but the work is slow.
 
@@ -73,6 +75,6 @@ Not at the moment, no.
 ## I wish to run my business using this tool
 Although there are some data-fields that can be used for business expenses, Firefly III will never move its focus from personal finance to business finance.
 
-## I wish to track stock portfolios using Firefly
+## I wish to track stock portfolios using Firefly III
 Same answer, unfortunately.
 
