@@ -4,7 +4,7 @@ subtitle: by James Cole
 email: thegrumpydictator@gmail.com
 description: A free and open source financial management tool
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://firefly-iii.github.io" # the base hostname & protocol for your site
+url: "https://firefly-iii.org" # the base hostname & protocol for your site
 author: James Cole
 google_analytics: "UA-58172398-13"
 
