@@ -20,7 +20,7 @@ docker volume create firefly_iii_upload
 
 ### Start the container
 
-Run this Docker command. Make sure that you edit the command to match your own database.
+Run this Docker command. Make sure that you edit the command to match your own database. You should really change the FF_APP_KEY as well. It should be a random string of exactly 32 characters.
 
 ```
 docker run -d \
@@ -80,7 +80,7 @@ And then start it again by running the command under "Start the container".
 Download the compose file located in [the Github repository](://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml)
 
 ### Edit the file 
-Modify the following variables. Keep in mind that `MYSQL_PASSWORD` and `FF_DB_PASSWORD` have to be **identical**.
+Modify the following variables in the docker compose file. Keep in mind that `MYSQL_PASSWORD` and `FF_DB_PASSWORD` have to be **identical**.
 
 Also keep in mind that `FF_APP_KEY` must be *exactly* 32 characters long.
 
@@ -104,7 +104,6 @@ If this is the first time you're running Firefly III then you must initialize th
 docker-compose exec firefly_iii_app php artisan migrate --seed
 docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
 docker-compose exec firefly_iii_app php artisan firefly:verify
-docker-compose exec firefly_iii_app php artisan firefly:instructions docker
 ```
 
 ### Surf to Firefly III
@@ -162,7 +161,6 @@ If this is the first time you're running Firefly III then you must initialize th
 docker-compose exec firefly_iii_app php artisan migrate --seed
 docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
 docker-compose exec firefly_iii_app php artisan firefly:verify
-docker-compose exec firefly_iii_app php artisan firefly:instructions docker
 ```
 
 ### Surf to Firefly III
