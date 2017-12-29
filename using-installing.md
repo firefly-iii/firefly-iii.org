@@ -25,6 +25,8 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 
 You also need an email address and the associated password and server settings. You can safely use your own email address. If you prefer not to, you can register a free email account at [GMail](https://accounts.google.com/SignUp?service=mail) or [Outlook](https://outlook.live.com/owa/). This isn't really mandatory but it could proof useful.
 
+If you wish to use another database such as SQLite, please check out [the FAQ]({{ 'faq-technical.html' | absolute_url }}).
+
 ### 1. Preparing your server
 
 #### Extra packages
@@ -147,8 +149,6 @@ Now you should be able to visit [http://localhost/firefly-iii**/public**](http:/
 #### Browsing to site
 
 Browsing to the site should be easy. You should see a login screen. If you see empty pages, or "Whoops" errors, open the `.env` file again and change `APP_DEBUG` from `false` to `true`. Also change `APP_LOG_LEVEL` to `debug`. This will give you some insight in what is happening. If you don't know what to do, [open an issue](https://github.com/firefly-iii/firefly-iii/issues) and I will help you.
-
-Stuff not working? [See this page](/installation-guide-faq/)!
 
 #### Registering an account
 You cannot login yet. Click on "Register a new account" and fill in the form.

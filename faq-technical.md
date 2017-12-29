@@ -10,6 +10,34 @@ redirect_from:
 
 No. Most code has been written specifically for PHP 7.1 and higher.
 
+### Can I use SQLite, instead of MySQL?
+
+Yes. When you are using sqlite, the following parameters are enough to get it working (the `.env` file):
+
+```
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USERNAME=homestead
+DB_PASSWORD=
+```
+
+Even the host and port are technically not necessary. To get it to work, the following file must exist: `/storage/database/database.sqlite`.
+
+You can create this file by simply running:
+
+```
+touch ./storage/database/database.sqlite
+```
+
+From your Firefly III directory.
+
+Then, you can initialise your database by running:
+
+```
+php artisan migrate:refresh --seed
+```
+
 ### Decimal points are missing, numbers are off, stuff like that
 
 Ensure with `dpkg-reconfigure locales` that the language you want to use is installed, then reboot Apache or Nginx (webserver).

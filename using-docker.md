@@ -7,6 +7,8 @@ redirect_from:
 
 Several Github users have contributed to the instructions below. There are several ways of installing Firefly III using docker, which will be detailed below. If you're new to docker or are not sure how to use docker please thread carefully.
 
+If you use Docker in conjunction with a reverse proxy, please check out the instructions at the bottom of this page.
+
 ## Straight from Docker Hub
 If you do this, you should already have a MySQL database running somewhere. For example, when you have one central MySQL database for all of your docker containers.
 
@@ -33,7 +35,7 @@ docker run -d \
 -e FF_DB_NAME=CHANGEME \
 -e FF_DB_USER=CHANGEME \
 -e FF_DB_PASSWORD=CHANGEME \
-jc5x/ff_exp:latest
+jc5x/firefly-iii:latest
 ```
 
 That should fire up a Docker container with Firefly III inside of it. If you visit it, it will say "Be right back". Continue below.
@@ -67,7 +69,7 @@ docker stop <container>
 Then run:
 
 ```
-docker pull jc5x/ff_exp:latest
+docker pull jc5x/firefly-iii:latest
 ```
 
 And then start it again by running the command under "Start the container".
@@ -77,7 +79,7 @@ And then start it again by running the command under "Start the container".
 ## Docker Hub with automatic updates via docker compose
 
 ### Download compose file
-Download the compose file located in [the Github repository](://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml)
+Download the compose file located in [the Github repository](https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml)
 
 ### Edit the file 
 Modify the following variables in the docker compose file. Keep in mind that `MYSQL_PASSWORD` and `FF_DB_PASSWORD` have to be **identical**.
@@ -170,6 +172,35 @@ You can now visit Firefly III at `http://localhost` or `http://docker-ip:port` i
 To update the container just run `docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app`. You can even add this command to a chrontab.
 
 <hr>
+
+## Docker and reverse proxies
+
+In the `.env` file you will find a variable called `TRUSTED_PROXIES` which must be set to either the reverse proxy machine or simply `**`. Set `APP_URL` to the URL you wish Firefly III to be on (ie. the proxy). For example:
+
+```
+# ...
+APP_URL=https://firefly.example.com
+TRUSTED_PROXIES=**
+# ...
+```
+
+On the command line, this would be:
+```
+-e FF_DB_HOST=mysql
+-e FF_DB_NAME=firefly
+-e FF_DB_USER=firefly
+-e FF_DB_PASSWORD=somepw
+-e FF_APP_KEY=some-secret-string
+-e FF_APP_ENV=local
+-e APP_URL=https://firefly.example.com
+-e TRUSTED_PROXIES=**
+```
+
+If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the HTTP header `X-Forwarded-Proto`. Add this to your vhost file:
+
+```
+RequestHeader set X-Forwarded-Proto "https"
+```
 
 ## Credits
 
