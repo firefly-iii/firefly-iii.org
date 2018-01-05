@@ -100,10 +100,16 @@ php artisan firefly:verify
 
 
 ## Heroku
-I am not sure how to upgrade a Heroku instance. 
+I am not sure how to upgrade a Heroku instance. I believe they auto-update.
 
 ## Sandstorm.io
-I am not sure how to upgrade a Heroku instance. 
+I am not sure how to upgrade a Sandstorm.io instance. I believe they auto-update.
+
+## AMPPS
+I am not sure how to upgrade a AMPPS instance. I believe they auto-update.
+
+## Softaculous
+I am not sure how to upgrade a Softaculous instance. I believe they auto-update.
 
 
 <hr>

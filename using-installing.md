@@ -14,7 +14,8 @@ redirect_from:
 This guide focuses on the installation of [Firefly III](https://github.com/firefly-iii/firefly-iii) only. The guide is just three steps!
 Check out [the FAQ]({{ 'faq-technical.html' | absolute_url }}) when things are not working.
 
-You can also use [Docker]({{ 'using-docker.html' | absolute_url }}), [Sandstorm]({{ 'using-sandstorm.html' | absolute_url }}) or [Heroku]({{ 'using-heroku.html' | absolute_url }}) to use Firefly III.
+You can also use [Docker]({{ 'using-docker.html' | absolute_url }}), [Sandstorm]({{ 'using-sandstorm.html' | absolute_url }}) [Heroku]({{ 'using-heroku.html' | absolute_url }}), 
+[Softaculous]({{ 'using-softaculous.html' | absolute_url }}) or [AMPPS]({{ 'using-ampps.html' | absolute_url }}) to run and use Firefly III.
 
 ### Prerequisites
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
