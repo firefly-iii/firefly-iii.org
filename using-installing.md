@@ -14,7 +14,7 @@ redirect_from:
 This guide focuses on the installation of [Firefly III](https://github.com/firefly-iii/firefly-iii) only. The guide is just three steps!
 Check out [the FAQ]({{ 'faq-technical.html' | absolute_url }}) when things are not working.
 
-You can also use [Docker]({{ 'using-docker.html' | absolute_url }}), [Sandstorm]({{ 'using-sandstorm.html' | absolute_url }}) [Heroku]({{ 'using-heroku.html' | absolute_url }}), 
+You can also use [Docker]({{ 'using-docker.html' | absolute_url }}), [Sandstorm]({{ 'using-sandstorm.html' | absolute_url }}), [Heroku]({{ 'using-heroku.html' | absolute_url }}), 
 [Softaculous]({{ 'using-softaculous.html' | absolute_url }}) or [AMPPS]({{ 'using-ampps.html' | absolute_url }}) to run and use Firefly III.
 
 ### Prerequisites
