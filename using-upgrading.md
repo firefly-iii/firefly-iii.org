@@ -19,7 +19,7 @@ docker stop <container>
 Then run:
 
 ```
-docker pull jc5x/ff_exp:latest
+docker pull jc5x/firefly-iii:latest
 ```
 
 And then start it again. Use the command you used when you [installed the Docker container]({{ 'using-docker.html' | absolute_url }}).
