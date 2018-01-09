@@ -33,7 +33,9 @@ To update the container just run `docker stop firefly-app && docker pull jc5x/fi
 ### Created using composer "create-project"
 The best way to upgrade is to "reinstall" Firefly III using the following command:
 
-* `composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated <next_version>`
+```
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated <next_version>
+```
 
 Where <next_version> is the latest version of Firefly III. This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your _original_ Firefly III installation is in the directory `firefly-iii` you can upgrade by simply moving over your `.env` file and other stuff:
 
