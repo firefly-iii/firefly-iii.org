@@ -7,7 +7,7 @@ redirect_from:
 
 Several Github users have contributed to the instructions below. There are several ways of installing Firefly III using docker, which will be detailed below. If you're new to docker or are not sure how to use docker please thread carefully.
 
-If you use Docker in conjunction with a reverse proxy, please check out the instructions at the bottom of this page.
+If you use Docker in conjunction with a reverse proxy, or when you wish to enable https, please check out the instructions at the bottom of this page.
 
 ## Straight from Docker Hub
 If you do this, you should already have a MySQL database running somewhere. For example, when you have one central MySQL database for all of your docker containers.

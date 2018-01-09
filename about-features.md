@@ -17,25 +17,25 @@ Most importantly..
 
 But actually, it features:
 
-- [A double-entry bookkeeping system](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system);
-- You can store, edit and remove [withdrawals, deposits and transfers](https://en.wikipedia.org/wiki/Financial_transaction). This allows you full financial management;
-- You can manage different types of accounts;
-  - [Asset](https://en.wikipedia.org/wiki/Asset) accounts
-  - Shared [asset accounts](https://en.wikipedia.org/wiki/Asset) ([household accounts](https://en.wikipedia.org/wiki/Household))
-  - Saving accounts
-  - Credit cards
-- It's possible to create, change and manage money using _[budgets](https://en.wikipedia.org/wiki/Envelope_system)_;
-- Organize transactions using categories;
-- Save towards a goal using [piggy banks](https://en.wikipedia.org/wiki/Piggy_bank);
-- Predict and anticipate [bills](https://en.wikipedia.org/wiki/Invoice);
-- View income / expense [reports](https://en.wikipedia.org/wiki/Financial_statement);
-- [Rule based](https://en.wikipedia.org/wiki/Rule-based_system) transaction handling with the ability to create your own rules.
-- The ability to export data so you can move to another system.
-- The ability to _import_ data so you can move _from_ another system.
-- Organize expenses using tags;
-- 2 factor authentication for extra security <i class="fa fa-lock"></i>;
-- Supports any currency you want, including crypto currencies such as Bitcoin <i class="fa fa-bitcoin"></i>.
-- Lots of help text in case you don't get it.
+* [A double-entry bookkeeping system](https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system);
+* You can store, edit and remove [withdrawals, deposits and transfers](https://firefly-iii.org/guide-transactions.html). This allows you full financial management;
+* You can manage different types of accounts;
+  * [Asset](https://firefly-iii.org/guide-accounts.html) accounts
+  * Shared [asset accounts](https://firefly-iii.org/guide-accounts.html) ([household accounts](https://firefly-iii.org/guide-accounts.html))
+  * Saving accounts
+  * Credit cards
+* It's possible to create, change and manage money using _[budgets](https://firefly-iii.org/guide-budgets.html)_;
+* Organize transactions using categories;
+* Save towards a goal using [piggy banks](https://firefly-iii.org/guide-piggy-banks.html);
+* Predict and anticipate [bills](https://firefly-iii.org/guide-bills.html);
+* View income / expense [reports](https://firefly-iii.org/guide-reports.html);
+* [Rule based](https://firefly-iii.org/guide-rules.html) transaction handling with the ability to create your own rules.
+* The ability to export data so you can move to another system.
+* The ability to _import_ data so you can move _from_ another system.
+* Organize expenses using tags;
+* 2 factor authentication for extra security <i class="fa fa-lock"></i>;
+* Supports any currency you want, including crypto currencies such as Bitcoin <i class="fa fa-bitcoin"></i>.
+* Lots of help text in case you don't get it.
 
 Everything is organised:
 
