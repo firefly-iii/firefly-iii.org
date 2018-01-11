@@ -10,6 +10,14 @@ redirect_from:
 
 No. Most code has been written specifically for PHP 7.1 and higher.
 
+### It is very slow on my server
+
+Raspberry Pi's and other microcomputers are not the most speedy devices. User [@ndandanov](https://github.com/ndandanov) has very kindly tested what works best, and found out that [installing PHP OpCache is a very good way to speed up Firefly III](https://github.com/firefly-iii/firefly-iii/issues/1095#issuecomment-356975735).
+
+### I used a default key, can I re-key the databae?
+
+If you accidentally used a blank key or used a default value instead of a secure one, [@ndandanov](https://github.com/ndandanov) has written a few scripts that should help [you re-encrypt the database](https://github.com/ndandanov/firefly-iii-reencrypt-database).
+
 ### Can I use SQLite, instead of MySQL?
 
 Yes. When you are using sqlite, the following parameters are enough to get it working (the `.env` file):
