@@ -1,11 +1,5 @@
 ---
 layout: page
 title: Softaculous
+redirect_to: http://firefly-iii.readthedocs.io/en/latest/installation/hosted.html#softaculous
 ---
-
-Firefly III is featured in [Softaculous](https://softaculous.com/). If your (hosting) server provides packages using Softaculous, Firefly III will be available as a package there.
-
-Any feedback you may have is welcome!
-
-### Upgrade
-I believe Softaculous auto-upgrades but I'm not actually sure.

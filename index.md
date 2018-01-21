@@ -15,7 +15,7 @@ layout: default
 				<p>
 				Featuring a double-entry bookkeeping system, with a completely customizable rule-engine. You can
 				quickly enter and organize your transactions in multiple currencies.
-				<a href="{{ 'about-features.html' | absolute_url }}">Read more</a>
+				<a href="http://firefly-iii.readthedocs.io/en/latest/about/features.html">Read more</a>
 				</p>
 			</div>
 		</article>
@@ -34,7 +34,7 @@ layout: default
 				<h3>Reports in many flavours</h3>
 				<p>
 				Quickly notice trends and be proud of what your net worth has become with a set of reports that no Excel-guru could
-				dream to match! <a href="{{ 'guide-reports.html' | absolute_url }}">Read more</a>
+				dream to match! <a href="http://firefly-iii.readthedocs.io/en/latest/advanced/reports.html">Read more</a>
 				</p>
 			</div>
 		</article>
@@ -50,62 +50,3 @@ layout: default
 		</article>
 	</div>
 </section>
-
-<!-- Section -->
-<!--
-<section>
-	<header class="major">
-		<h2>Ipsum sed dolor</h2>
-	</header>
-	<div class="posts">
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic01.jpg" alt="" /></a>
-			<h3>Interdum aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic02.jpg" alt="" /></a>
-			<h3>Nulla amet dolore</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic03.jpg" alt="" /></a>
-			<h3>Tempus ullamcorper</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic04.jpg" alt="" /></a>
-			<h3>Sed etiam facilis</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic05.jpg" alt="" /></a>
-			<h3>Feugiat lorem aenean</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="assets/images/pic06.jpg" alt="" /></a>
-			<h3>Amet varius aliquam</h3>
-			<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-			<ul class="actions">
-				<li><a href="#" class="button">More</a></li>
-			</ul>
-		</article>
-	</div>
-</section>
--->

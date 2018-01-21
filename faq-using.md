@@ -2,16 +2,5 @@
 layout: page
 title: FAQ about using Firefly III
 show: yes
+redirect_to: http://firefly-iii.readthedocs.io/en/latest/support/faq.html
 ---
-
-### Can I try it first?
-
-[Yes, you can!](https://demo.firefly-iii.org/)
-
-### How can I use it? I don't get it
-
-You must install it yourself on webhosting of your choice, or on a webserver you have access to. The [installation guide](/installation-guide/) can help you.
-
-### I have another question!
-
-Please [open a ticket on Github](https://github.com/firefly-iii/firefly-iii).
