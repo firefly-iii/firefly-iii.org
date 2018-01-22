@@ -23,7 +23,7 @@ Of course, to get to know Firefly III first, and to see if it fits you, please c
 
 ### Then what?
 
-If you decide you want to run Firefly III yourself (this is the mandatory next step), you have to install it somewhere. The [readme file](https://github.com/firefly-iii/firefly-iii) on GitHub lists all the possibilities.
+If you decide you want to run Firefly III yourself (this is the mandatory next step), you have to install it somewhere. The [readme file](https://github.com/firefly-iii/firefly-iii/tree/master#get-started) on GitHub lists all the possibilities.
 
 ### Finally...
 
