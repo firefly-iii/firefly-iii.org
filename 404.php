@@ -99,7 +99,9 @@
 
 <?php
 
-$ignore = [];
+$ignore = [
+  '/wp-login.php'
+];
 $page = $_SERVER['REQUEST_URI'];
 
 if(!in_array($page, $ignore)) {
