@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -rv ./ sander@firefly-iii.org:/var/www/firefly-iii.org
+rsync -rv --exclude=.git --exclude=.vagrant  ./ sander@firefly-iii.org:/var/www/firefly-iii.org
