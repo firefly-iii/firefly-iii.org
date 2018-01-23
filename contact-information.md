@@ -2,8 +2,6 @@
 layout: page
 title: Contact information
 show: yes
-redirect_from:
-  - /reporting-bugs-and-security-issues/
 ---
 
 As mentioned on several pages, you can contact me through email on [thegrumpydictator@gmail.com](mailto:thegrumpydictator@gmail.com).
