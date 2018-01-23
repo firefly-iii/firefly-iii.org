@@ -103,7 +103,7 @@ $ignore = [];
 $page = $_SERVER['REQUEST_URI'];
 
 if(!in_array($page, $ignore)) {
-  $message = "Hi there!\n\nThe following page was not found:\n".$page."\n\Please make a note of it.";
+  $message = "Hi there!\n\nThe following page was not found:\n\n".$page."\n\nPlease make a note of it.";
   $headers = 'From: robot@firefly-iii.org' . "\r\n" .
     'Reply-To: robot@firefly-iii.org' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
