@@ -1,10 +1,9 @@
 <?php
 
-$ignore = [
-];
-$page   = $_GET['page']
+$ignore = [];
+$page   = $_GET['page'] ?? '';
 
-if (!in_array($page, $ignore)) {
+if (!in_array($page, $ignore) && strlen($page) > 0) {
     $message = "Hi there!\n\nThe following page was not found on firefly-iii.github.io:\n\n%s\n\nIt was requested by: %s.\n\nPlease make a note of it.";
     $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR']);
     $headers = 'From: robot@firefly-iii.org' . "\r\n" .
