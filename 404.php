@@ -154,6 +154,7 @@ $ignore = [
     '/deployment-config.json',
     '/.remote-sync.json',
     '/.well-known/dnt-policy.txt',
+    '/.well-known/assetlinks.json',
     '/ads.txt',
     '/.well-known/security.txt',
 ];
