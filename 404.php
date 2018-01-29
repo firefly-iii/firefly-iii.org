@@ -147,16 +147,19 @@
 <?php
 
 $ignore = [
+    '/.well-known/dnt-policy.txt',
+    '/.well-known/security.txt',
+	'/.well-known/assetlinks.json',
+	'/.well-known/apple-app-site-association',
     '/wp-login.php',
     '/.ftpconfig',
     '/sftp-config.json',
     '/.vscode/ftp-sync.json',
     '/deployment-config.json',
-    '/.remote-sync.json',
-    '/.well-known/dnt-policy.txt',
-    '/.well-known/assetlinks.json',
+	'/.remote-sync.json',
     '/ads.txt',
-    '/.well-known/security.txt',
+	'/apple-app-site-association',
+    
 ];
 $page   = $_SERVER['REQUEST_URI'];
 
