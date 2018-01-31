@@ -146,29 +146,23 @@
 
 <?php
 
-$ignore = [
-    '/.well-known/dnt-policy.txt',
-    '/.well-known/security.txt',
-	'/.well-known/assetlinks.json',
-	'/.well-known/apple-app-site-association',
-    '/wp-login.php',
-    '/.ftpconfig',
-    '/sftp-config.json',
-    '/.vscode/ftp-sync.json',
-    '/deployment-config.json',
-	'/.remote-sync.json',
-    '/ads.txt',
-	'/apple-app-site-association',
-    
-];
-$page   = $_SERVER['REQUEST_URI'];
+$page    = $_SERVER['REQUEST_URI'];
+$referer = $_SERVER['HTTP_REFERER'];
+
+$content = file_get_contents(__DIR__ . '/storage/hits.txt');
+$ignore  = explode("\n", $content);
 
 if (!in_array($page, $ignore)) {
-    $message = "Hi there!\n\nThe following page was not found:\n\n%s\n\nIt was requested by: %s.\n\nPlease make a note of it.";
-    $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR']);
+    $message = "Hi there!\n\nThe following page was not found:\n\n%s\n\nIt was requested by: %s.\nReferer is: %s\n\nPlease make a note of it.";
+    $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR'], $referer);
     $headers = 'From: robot@firefly-iii.org' . "\r\n" .
                'Reply-To: robot@firefly-iii.org' . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
     mail('thegrumpydictator@gmail.com', '404 found on FireflyIII.org', $message, $headers);
+
+    // expand ignore file:
+    $ignore[] = $page;
+    $new      = join("\n", $page);
+    file_put_contents(__DIR__ . '/storage/hits.txt', $new);
 }
 
