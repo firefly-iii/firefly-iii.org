@@ -152,7 +152,7 @@ $referer = $_SERVER['HTTP_REFERER'];
 $content = file_get_contents(__DIR__ . '/storage/hits.txt');
 $ignore  = explode("\n", $content);
 
-if (!in_array($page, $ignore)) {
+if (!in_array($page, $ignore) && strlen($page) > 0) {
     $message = "Hi there!\n\nThe following page was not found:\n\n%s\n\nIt was requested by: %s.\nReferer is: %s\n\nPlease make a note of it.";
     $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR'], $referer);
     $headers = 'From: robot@firefly-iii.org' . "\r\n" .
@@ -161,7 +161,7 @@ if (!in_array($page, $ignore)) {
     mail('thegrumpydictator@gmail.com', '404 found on FireflyIII.org', $message, $headers);
 
     // expand ignore file:
-    $ignore[] = $page;
+    $ignore[] = trim($page);
     $new      = join("\n", $ignore);
     file_put_contents(__DIR__ . '/storage/hits.txt', $new);
 }

@@ -15,7 +15,7 @@ if (!in_array($page, $ignore) && strlen($page) > 0) {
     mail('thegrumpydictator@gmail.com', '404 found on firefly-iii.github.io', $message, $headers);
 
     // expand ignore file:
-    $ignore[] = $page;
+    $ignore[] = trim($page);
     $new      = join("\n", $ignore);
     file_put_contents(__DIR__ . '/storage/hits.txt', $new);
 
