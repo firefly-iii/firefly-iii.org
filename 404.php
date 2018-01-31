@@ -162,7 +162,7 @@ if (!in_array($page, $ignore)) {
 
     // expand ignore file:
     $ignore[] = $page;
-    $new      = join("\n", $page);
+    $new      = join("\n", $ignore);
     file_put_contents(__DIR__ . '/storage/hits.txt', $new);
 }
 
