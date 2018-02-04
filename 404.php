@@ -148,13 +148,14 @@
 
 $page    = $_SERVER['REQUEST_URI'];
 $referer = $_SERVER['HTTP_REFERER'];
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
 
 $content = file_get_contents(__DIR__ . '/storage/hits.txt');
 $ignore  = explode("\n", $content);
 
 if (!in_array($page, $ignore) && strlen($page) > 0) {
-    $message = "Hi there!\n\nThe following page was not found:\n\n%s\n\nIt was requested by: %s.\nReferer is: %s\n\nPlease make a note of it.";
-    $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR'], $referer);
+    $message = "Hi there!\n\nThe following page was not found:\n\n%s\n\nIt was requested by: %s.\nReferer is: %s\nUser agent is: %s\n\nPlease make a note of it.";
+    $message = sprintf($message, $page, $_SERVER['REMOTE_ADDR'], $referer, $userAgent);
     $headers = 'From: robot@firefly-iii.org' . "\r\n" .
                'Reply-To: robot@firefly-iii.org' . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
