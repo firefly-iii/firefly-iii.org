@@ -1,2 +1,3 @@
-# firefly-iii.github.io
-The GitHub pages site for Firefly III which can be found at [https://firefly-iii.org/](https://firefly-iii.org/)
+# firefly-iii.org
+
+Repository for the website of Firefly III, which can be found at [https://firefly-iii.org/](https://firefly-iii.org/).
