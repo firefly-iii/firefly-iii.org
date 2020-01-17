@@ -604,9 +604,7 @@
 	$('.portfolio-modal').on('shown.bs.modal', function (e) {
 		// do something...
 		var modal = $(e.currentTarget);
-		console.log('User triggered ' + modal.attr('id'));
 		_paq.push(['trackEvent', 'loadModal', modal.attr('id')]);
-	
   });
 	
   })();
