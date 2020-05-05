@@ -1,0 +1,55 @@
+{
+    "title": "Freelancer",
+    "name": "startbootstrap-freelancer",
+    "version": "6.0.2",
+    "scripts": {
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
+    },
+    "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "scss",
+        "html",
+        "pug",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/themes/freelancer",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-freelancer.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.4.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "9.7.6",
+        "browser-sync": "2.26.7",
+        "chokidar": "3.3.1",
+        "concurrently": "5.1.0",
+        "postcss": "7.0.27",
+        "prettier": "2.0.4",
+        "pug": "2.0.4",
+        "sass": "1.26.3",
+        "shelljs": "0.8.3",
+        "upath": "1.2.0"
+    }
+}
