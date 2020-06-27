@@ -130,8 +130,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#importModal">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                Tools are available so you can
-                import transactions into Firefly III
+                Tools are available so you can import transactions<br /> into Firefly III
               </div>
             </div>
             <img class="img-fluid" src="img/icons/008-contract.png" alt="">
@@ -424,16 +423,16 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/ff4.png" alt="">
+                <img class="img-fluid rounded mb-5" src="img/ff7.png" alt="" style="border:1px #bbb solid;">
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5 text-left">
-                  Firefly III can import from variety of sources using the wonderful Salt Edge API, that allows access to over 2500 financial institutions and
-                  counting.
-                  Firefly III also features an advanced CSV importer that can handle (almost) any CSV file you care to feed it.
-                  <br/><br/>
-                  You can try a dummy import to get a feel for how it works
-                  on <a href="https://demo.firefly-iii.org/" title="demo site">the Firefly III demo website</a>.
+                <p class="mb-5 text-left" style="margin-bottom: 1rem !important;">
+                  Several ready-made tools exist to import data into your Firefly III administration.
                 </p>
+                <ul class="mb-5 text-left">
+                  <li>A <a href="https://github.com/firefly-iii/csv-importer/">CSV file importer</a> that can handle any CSV file containing financial transactions.</li>
+                  <li>A <a href="https://github.com/firefly-iii/spectre-importer">Spectre API importer</a>, using an API made by fintech company Salt Edge API. It allows access to over 2500 financial institutions.</li>
+                  <li>More options exist: <a href="https://docs.firefly-iii.org/importing-data/introduction">FinTS, Plaid, YNAB,...</a></li>
+              </ul>
                 <button class="btn btn-primary" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
