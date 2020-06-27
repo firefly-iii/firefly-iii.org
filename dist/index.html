@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-    
+
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Firefly III is a free and open source personal finance manager.">
@@ -31,7 +31,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -70,7 +70,7 @@
             </div>
         </header>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="screenshots">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Screenshots and info</h2>
@@ -130,7 +130,8 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#importModal">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                Firefly III can import<br />transactions from various sources
+                Tools are available so you can
+                import transactions into Firefly III
               </div>
             </div>
             <img class="img-fluid" src="img/icons/008-contract.png" alt="">
@@ -240,7 +241,7 @@
           <p class="mb-0 text-left">
             <a href="https://github.com/BlackrockDigital/startbootstrap-freelancer">Layout</a><br />
             Icons made by <a href="https://www.flaticon.com/packs/financial-35">itim2101</a>
-            
+
           </p>
         </div>
                 </div>
@@ -552,7 +553,7 @@
 <!-- Matomo -->
 <script type="text/javascript">
   var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+
   _paq.push(["setCookieDomain", "*.www.firefly-iii.org"]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
@@ -563,6 +564,12 @@
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
+
+  $('.portfolio-modal').on('shown.bs.modal', function (e) {
+    var modal = $(e.currentTarget);
+    _paq.push(['trackEvent', 'loadModal', modal.attr('id')]);
+  })
+
 </script>
 <noscript><p><img src="//analytics.firefly-iii.org/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Matomo Code -->
