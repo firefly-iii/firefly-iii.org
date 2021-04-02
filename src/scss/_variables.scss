@@ -4,6 +4,7 @@
 $topbar: #1E6581;
 $teal: #588FA4;
 $dark-blue: #7FC648;
+$darkred: #CD5029;
 
 // Override Bootstrap primary and secondary colors
 $primary: $teal;
@@ -12,6 +13,15 @@ $secondary: $dark-blue;
 .bg-topbar {
     background: $topbar;
 }
+
+.text-darkred {
+    color: $darkred;
+}
+
+.text-topbar {
+    color: $topbar;
+}
+
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
