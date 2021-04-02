@@ -5,10 +5,10 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='Firefly III')
+        meta(name='author', content='James Cole')
 
-        title Freelancer - Start Bootstrap Theme
+        title Firefly III - A free and open source personal finance manager
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon/favicon.ico')
@@ -20,6 +20,14 @@ html(lang='en')
         link(rel='mask-icon', color='#1e6581', href='assets/favicon/safari-pinned-tab.svg')
         meta(name='msapplication-TileColor', content='#1e6581')
         meta(name='theme-color', content='#1e6581')
+
+        // social
+        meta(name='twitter:card', content='summary_large_image')
+        meta(name='twitter:title', content='Firefly III')
+        meta(name='twitter:site', content='@firefly_iii')
+        meta(name='twitter:description', content='Firefly III')
+        meta(name='twitter:image', content='https://www.firefly-iii.org/assets/logo/wall.png')
+        meta(name='twitter:image:alt', content='Firefly III')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
@@ -392,3 +400,27 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
+
+        // analytics
+        script.
+            var _paq = window._paq || [];
+
+            _paq.push(["setCookieDomain", "*.www.firefly-iii.org"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+                var u="//analytics.firefly-iii.org/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '2']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+
+            $('.portfolio-modal').on('shown.bs.modal', function (e) {
+                var modal = $(e.currentTarget);
+                _paq.push(['trackEvent', 'loadModal', modal.attr('id')]);
+            })
+        noscript 
+            p 
+                img(src='//analytics.firefly-iii.org/matomo.php?idsite=2&amp;rec=1', style='border:0;')
+
