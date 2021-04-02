@@ -1,12 +1,17 @@
 // Variables
 
 // Set custom colors
+$topbar: #1E6581;
 $teal: #588FA4;
 $dark-blue: #7FC648;
 
 // Override Bootstrap primary and secondary colors
 $primary: $teal;
 $secondary: $dark-blue;
+
+.bg-topbar {
+    background: $topbar;
+}
 
 // Override Bootstrap font variables
 $font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI",
