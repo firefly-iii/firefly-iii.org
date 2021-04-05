@@ -1,5 +1,5 @@
 # Build the site
-npm install && npm build
+npm install && npm run build
 
 # test the site
 npm install && npm run start
