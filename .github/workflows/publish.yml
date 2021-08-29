@@ -1,0 +1,22 @@
+name: Publish documentation
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Build documentation
+        run: |
+          npm install && npm run build
+      - name: Upload to Azure Blob Storage
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
+        run: |
+          az storage blob upload-batch \
+                            -s ./dist \
+                            -d 'https://fireflyiiiwebsite.blob.core.windows.net/$web' \
+                            --no-progress
