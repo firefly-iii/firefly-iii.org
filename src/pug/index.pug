@@ -46,7 +46,7 @@ html(lang='en')
             .container
                 a.navbar-brand.js-scroll-trigger(href='#page-top') Firefly III
                 button.navbar-toggler.navbar-toggler-right.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu 
+                    | Menu
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
@@ -84,8 +84,8 @@ html(lang='en')
                     .divider-custom-icon
                         i.fas.fa-star
                     .divider-custom-line
-                p.text-center.text-muted 
-                    | (click on the icons for more information) 
+                p.text-center.text-muted
+                    | (click on the icons for more information)
                 // Portfolio Grid Items
                 .row.justify-content-center
                     // Portfolio Item 1
@@ -146,7 +146,7 @@ html(lang='en')
                 .row
                     .col-lg-4.ml-auto
                         p.lead
-                            |  "Firefly III" is a self-hosted financial manager. It can help you keep track of expenses, income, budgets and everything in between. It supports credit cards, shared household accounts and savings accounts. It’s pretty fancy. You should use it to save and organise money. 
+                            |  "Firefly III" is a self-hosted financial manager. It can help you keep track of expenses, income, budgets and everything in between. It supports credit cards, shared household accounts and savings accounts. It’s pretty fancy. You should use it to save and organise money.
                     .col-lg-4.mr-auto
                         p.lead
                             |  You can read more about the way of working, the features and the current state in the documentation ("read more").
@@ -187,15 +187,15 @@ html(lang='en')
                         h4.text-uppercase.mb-4 Credits
                         p.lead.mb-0
                             a(href='http://startbootstrap.com') Layout
-                            | / 
+                            | /
                             a(href='http://startbootstrap.com') icons
-                            | / 
+                            | /
                             | logo by Cherie Woo
         // Copyright Section
         div.copyright.py-4.text-center.text-white
             .container
                 small
-                    | Copyright &copy; 
+                    | Copyright &copy;
                     a(href='mailto:james@firefly-iii.org') James Cole
                     // This script automatically adds the current year to your website footer
                     // (credit: https://updateyourfooter.com/)
@@ -292,7 +292,7 @@ html(lang='en')
                                     img.img-fluid.rounded.mb-5(src='assets/screenshots/ff3.png', alt='...')
                                     // Portfolio Modal - Text
                                     p.mb-2
-                                        |  No more tedious transaction entering. Use rules to quickly convert shorthands to detailed transactions. Clean up your banks abysmal CSV files. Use the rule engine to automatically set budgets, remove categories, append descriptions, change notes or something else entirely. 
+                                        |  No more tedious transaction entering. Use rules to quickly convert shorthands to detailed transactions. Clean up your banks abysmal CSV files. Use the rule engine to automatically set budgets, remove categories, append descriptions, change notes or something else entirely.
                                     p.mb-2
                                         | You can read more about this in the <a href="https://docs.firefly-iii.org/advanced-concepts/rules" title="documentation of Firefly III">documentation of Firefly III</a> and you can try Firefly III for yourself on <a href="https://demo.firefly-iii.org/" title="demo site">the demo website</a>.
                                     button.btn.btn-primary(data-dismiss='modal')
@@ -321,14 +321,9 @@ html(lang='en')
                                     img.img-fluid.rounded.mb-5(src='assets/screenshots/ff4.png', alt='...')
                                     // Portfolio Modal - Text
                                     p.mb-2.text-left
-                                        | Several ready-made tools exist to import data into your Firefly III administration.
-                                    ul.mb-2.text-left 
-                                        li
-                                            | A <a href="https://github.com/firefly-iii/csv-importer/">CSV file importer</a> that can handle any CSV file containing financial transactions.
-                                        li 
-                                            | A <a href="https://github.com/firefly-iii/spectre-importer">Spectre API importer</a>, using an API made by fintech company Salt Edge API. It allows access to over 2500 financial institutions.
-                                        li
-                                            | More options exist: <a href="https://docs.firefly-iii.org/importing-data/introduction">FinTS, Plaid, YNAB,...</a>
+                                        | A special <a href="https://github.com/firefly-iii/data-importer/">Data Importer</a> helps you import data into your Firefly III administration.
+                                    p.mb-2.text-left
+                                        | It supports many (thousands!) of banks and financial institutions, but it can also import from CSV files.
                                     button.btn.btn-primary(data-dismiss='modal')
                                         i.fas.fa-times.fa-fw
                                         | Close Window
@@ -384,7 +379,7 @@ html(lang='en')
                                     img.img-fluid.rounded.mb-5(src='assets/screenshots/ff6.png', alt='...')
                                     // Portfolio Modal - Text
                                     p.mb-2
-                                        |  For the advanced and mobile users out there, Firefly III features an expansive JSON REST API that allows you to tap into Firefly III's most important features. Create transactions, manage categories and get chart data from any app or system. 
+                                        |  For the advanced and mobile users out there, Firefly III features an expansive JSON REST API that allows you to tap into Firefly III's most important features. Create transactions, manage categories and get chart data from any app or system.
                                     p.mb-2
                                         | You can read more about this in the <a href="https://api-docs.firefly-iii.org/" title="API documentation of Firefly III">API documentation of Firefly III</a>, where you can try the API against the <a href="https://demo.firefly-iii.org/" title="demo site">the demo website</a>.
                                     button.btn.btn-primary(data-dismiss='modal')
@@ -420,7 +415,7 @@ html(lang='en')
                 var modal = $(e.currentTarget);
                 _paq.push(['trackEvent', 'loadModal', modal.attr('id')]);
             })
-        noscript 
-            p 
+        noscript
+            p
                 img(src='//analytics.firefly-iii.org/matomo.php?idsite=2&amp;rec=1', style='border:0;')
 
