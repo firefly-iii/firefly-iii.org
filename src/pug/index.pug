@@ -46,7 +46,13 @@ html(lang='en')
             g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
             })();
 
-
+            $('.portfolio-modal').on('shown.bs.modal', function (e) {
+                var modal = $(e.currentTarget);
+                _paq.push(['trackEvent', 'loadModal', modal.attr('id')]);
+            })
+        noscript
+            p
+                img(src='//analytics.firefly-iii.org/matomo.php?idsite=2&amp;rec=1', style='border:0;')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
