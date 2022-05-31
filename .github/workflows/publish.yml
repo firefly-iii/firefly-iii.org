@@ -20,3 +20,4 @@ jobs:
                             -s ./dist \
                             -d 'https://fireflyiiiwebsite.blob.core.windows.net/$web' \
                             --no-progress
+                            --overwrite
