@@ -1,0 +1,23 @@
+// 
+// Call to action
+// 
+
+.call-to-action {
+    position: relative;
+    background-color: $gray-800;
+    background: url('../assets/img/bg-masthead.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    &:before {
+        content: '';
+        position: absolute;
+        background-color: mix($gray-900, $primary, 75%);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    }
+}
