@@ -19,5 +19,5 @@ jobs:
           az storage blob upload-batch \
                             -s ./dist \
                             -d 'https://fireflyiiiwebsite.blob.core.windows.net/$web' \
-                            --no-progress
+                            --no-progress \
                             --overwrite
