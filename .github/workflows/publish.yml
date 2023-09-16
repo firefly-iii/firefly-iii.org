@@ -8,10 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Build documentation
         run: |
           npm install && npm run build
+
+          # copy security.txt to dist.
+          cp -r src/.well-known dist/well-known
       - name: Upload to Azure Blob Storage
         env:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
@@ -19,5 +22,4 @@ jobs:
           az storage blob upload-batch \
                             -s ./dist \
                             -d 'https://fireflyiiiwebsite.blob.core.windows.net/$web' \
-                            --no-progress \
                             --overwrite
