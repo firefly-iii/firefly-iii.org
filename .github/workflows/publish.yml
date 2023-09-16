@@ -14,7 +14,7 @@ jobs:
           npm install && npm run build
 
           # copy security.txt to dist.
-          cp -r src/.well-known dist/well-known
+          cp -r src/.well-known dist/.well-known
       - name: Upload to Azure Blob Storage
         env:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
